@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Aircraft Detailing at Davis Airport (W50) | Plane & Simple</title>
+  <meta name="description" content="Luxury aircraft detailing at Davis Airport (W50). Exterior, interior, and protection services for jets, turboprops, GA, helicopters, gliders, and warbirds."/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--brand-blue:#001126;--brand-gold:#D4AF37}
+    body{font-family:'Open Sans',sans-serif;background:#fafafa;color:#111;text-align:center;margin:0;padding:0}
+    header,footer{background:var(--brand-blue);color:#fff;padding:24px;opacity:0;animation:fadeIn .9s ease .2s forwards}
+    .logo-container{margin:20px auto 6px;position:relative;width:220px;height:220px;display:grid;place-items:center;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease .6s forwards}
+    .logo-container::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(closest-side, rgba(212,175,55,0.35), rgba(212,175,55,0.0) 70%);filter:blur(6px);animation:pulse 6s ease-in-out infinite}
+    .logo-container img{width:160px;height:160px;border-radius:50%;position:relative;z-index:2;box-shadow:0 0 40px rgba(212,175,55,.6), 0 0 80px rgba(212,175,55,.4)}
+    .orbit{position:absolute;inset:0;margin:auto;width:240px;height:240px;border-radius:50%;z-index:1;pointer-events:none;
+      -webkit-mask: radial-gradient(circle, transparent 95px, #000 95px 120px, transparent 120px);
+              mask: radial-gradient(circle, transparent 95px, #000 95px 120px, transparent 120px);
+    }
+    .orbit::before{content:"";position:absolute;inset:-12px;border-radius:50%;
+      background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.95) 0 10px, rgba(212,175,55,0) 26px);
+      filter: blur(10px); animation:orbit-spin 8s linear infinite;
+    }
+    h1{font-family:'Cinzel',serif;color:var(--brand-gold);opacity:0;transform:translateY(16px);animation:fadeUp .9s ease .9s forwards}
+    .content{max-width:900px;margin:20px auto;line-height:1.65;opacity:0;transform:translateY(16px);animation:fadeUp .9s ease 1.1s forwards}
+    .cta{display:inline-block;margin-top:20px;background:var(--brand-gold);color:var(--brand-blue);padding:10px 20px;border-radius:26px;text-decoration:none;font-weight:700;transition:all .3s}
+    .cta:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(212,175,55,.35)}
+    @keyframes orbit-spin{ to { transform: rotate(360deg); } }
+    @keyframes pulse{0%,100%{box-shadow:0 0 28px rgba(212,175,55,.6), 0 0 70px rgba(212,175,55,.35)}50%{box-shadow:0 0 46px rgba(212,175,55,.95), 0 0 110px rgba(212,175,55,.55)}}
+    @keyframes fadeIn{to{opacity:1}}
+    @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <div class="orbit"></div>
+    <img src="Logo.png" alt="Plane & Simple Logo">
+  </div>
+  <h1>Plane & Simple — Aircraft Detailing at Davis Airport (W50)</h1>
+</header>
+
+<main class="content">
+  <p>Plane & Simple provides premium aircraft detailing at Davis Airport (W50). We service jets, turboprops, single &amp; multi engine, helicopters, gliders, and warbirds.</p>
+  <a href="#booking" class="cta">Book Now</a>
+  <p style="margin-top:12px; font-weight:600; color:#001126;">
+    Call: (202) 805-3443<br/>
+    Email: <a href="mailto:Planeandsimpledetails@gmail.com">Planeandsimpledetails@gmail.com</a>
+  </p>
+  <div style="margin-top:40px"><a href="index.html">← Back to Home</a></div>
+</main>
+
+
+<section id="booking">
+  <form action="https://formspree.io/f/mgvnyann" method="POST">
+    <input type="hidden" name="_next" value="https://planeandsimpleaircraftdetailing.github.io/thankyou.html">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="_replyto" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="package">Service Package</label>
+    <select id="package" name="package" required>
+      <option>Bronze – Ramp Ready</option>
+      <option>Silver – Executive</option>
+      <option>Gold – Prestige</option>
+      <option>Platinum – Signature</option>
+      <option>Ultra – Bespoke Fleet</option>
+    </select>
+    <label for="notes">Special Requests</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Tail number, hangar, FBO, preferred date/time…"></textarea>
+    <button type="submit" class="cta">Submit Booking</button>
+  </form>
+</section>
+
+
+<footer><p>© 2025 Plane & Simple Aircraft Detailing</p></footer>
+</body>
+</html>
