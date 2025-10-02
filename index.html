@@ -41,26 +41,32 @@
     }
     nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:var(--brand-gold);transform:translateX(-50%);transition:var(--t)}
     nav a:hover::after{width:100%}
-    .header-cta{
-      display:none; /* hidden on mobile */
-    }
+    .header-cta{display:none} /* hidden for mobile-first */
     .hamburger{
       font-size:2rem;color:var(--brand-gold);cursor:pointer;z-index:1100
     }
     nav ul{display:none;flex-direction:column;gap:18px;background:rgba(0,17,38,.95);
-      position:absolute;top:60px;right:10px;width:200px;padding:20px;border-radius:8px}
+      position:absolute;top:60px;right:10px;width:220px;padding:20px;border-radius:8px}
     nav ul.active{display:flex}
 
     /* Hero */
     .hero{
-      position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
-      background:url('intro.png') center center/cover no-repeat;
+      position:relative;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:url('intro.png') center center/contain no-repeat;
       background-color:var(--brand-blue);
       opacity:0;animation:heroIn 1.6s ease .2s forwards
     }
     @keyframes heroIn{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
     .hero::before{content:"";position:absolute;inset:0;background:rgba(0,17,38,.45);opacity:0;animation:fadeIn 1.2s ease .6s forwards}
-    .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+    .hero-inner{
+      position:relative;z-index:2;color:#fff;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:40px 20px
+    }
 
     /* Crest */
     .crest{width:160px;height:160px;margin:0 auto 20px;position:relative;display:grid;place-items:center;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease 1s forwards}
@@ -87,6 +93,7 @@
     .cta{background:var(--brand-gold);color:var(--brand-blue);padding:10px 22px;border-radius:30px;font-weight:800;text-decoration:none;box-shadow:0 6px 18px rgba(212,175,55,.3);transition:var(--t);opacity:0;transform:translateY(18px);animation:fadeUp 1s ease 1.5s forwards}
     .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 20px rgba(212,175,55,.6);transform:translateY(0)}
 
+    /* Sections */
     section{padding:60px 0}
     .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:1.4rem;color:var(--brand-gold);margin-bottom:12px;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease forwards}
     .gold-line{width:90px;height:2px;margin:12px auto 30px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
@@ -115,7 +122,8 @@
     .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.8rem;color:#fff;letter-spacing:.3rem;background:rgba(0,17,38,.25)}
 
     .air-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:0 auto}
-    .air-grid a{text-decoration:none;color:var(--brand-blue);font-weight:700}
+    .air-grid a{text-decoration:none;color:var(--brand-blue);font-weight:700;background:#fff;padding:10px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,.1);transition:var(--t)}
+    .air-grid a:hover{background:var(--brand-gold);color:#fff}
 
     footer{background:var(--brand-blue);color:#cfd7e3;padding:20px;font-size:.9rem}
 
@@ -164,7 +172,7 @@
       <p class="lead">
         Plane &amp; Simple is a luxury aircraft detailing company serving the greater Washington, D.C. region.
         We deliver concierge-level exterior and cabin care, brightwork refinement, and protective finishes for
-        small private planes to corporate jets. From ramp-ready turnarounds to bespoke fleet programs, our Bronze through
+        private planes to corporate jets. From ramp-ready turnarounds to bespoke fleet programs, our Bronze through
         Ultra packages are tailored to your mission profile and executed with discretion, precision, and a
         presentation that endures beyond the runway.
       </p>
@@ -234,7 +242,7 @@
             <li>Quick Cabin Reset</li>
           </ul>
           <p class="pricing"><strong>From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
+          <a href="booking.html" class="cta">Select</a>
         </div>
         <div class="package">
           <h3>Silver</h3><h4>Executive</h4>
@@ -246,7 +254,7 @@
             <li>Lavatory Refresh</li>
           </ul>
           <p class="pricing"><strong>From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
+          <a href="booking.html" class="cta">Select</a>
         </div>
         <div class="package">
           <h3>Gold</h3><h4>Prestige</h4>
@@ -258,7 +266,7 @@
             <li>Lavatory Sterilization</li>
           </ul>
           <p class="pricing"><strong>From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
+          <a href="booking.html" class="cta">Select</a>
         </div>
         <div class="package">
           <h3>Platinum</h3><h4>Signature</h4>
@@ -270,7 +278,7 @@
             <li>Landing Gear Treatment</li>
           </ul>
           <p class="pricing"><strong>From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
+          <a href="booking.html" class="cta">Select</a>
         </div>
         <div class="package">
           <h3>Ultra</h3><h4>Bespoke Fleet</h4>
@@ -282,7 +290,7 @@
             <li>Fleet Membership</li>
           </ul>
           <p class="pricing"><strong>Custom Fleet Programs · $10k–$50k+ annually</strong></p>
-          <a href="#contact" class="cta">Select</a>
+          <a href="booking.html" class="cta">Select</a>
         </div>
       </div>
     </div>
@@ -302,10 +310,21 @@
       <h2 class="sec-head">Airports We Serve</h2>
       <div class="gold-line"></div>
       <div class="air-grid">
-        <a href="#">IAD — Washington Dulles International</a>
-        <a href="#">BWI — Baltimore/Washington International</a>
-        <a href="#">DCA — Ronald Reagan Washington National</a>
-        <a href="#">HEF — Manassas Regional</a>
+        <a href="booking.html">IAD — Washington Dulles International</a>
+        <a href="booking.html">BWI — Baltimore/Washington International</a>
+        <a href="booking.html">DCA — Ronald Reagan Washington National</a>
+        <a href="booking.html">HEF — Manassas Regional</a>
+        <a href="booking.html">JYO — Leesburg Executive</a>
+        <a href="booking.html">RMN — Stafford Regional</a>
+        <a href="booking.html">CJR — Culpeper Regional</a>
+        <a href="booking.html">GAI — Montgomery County Airpark</a>
+        <a href="booking.html">CGS — College Park Airport</a>
+        <a href="booking.html">ANP — Annapolis (Lee)</a>
+        <a href="booking.html">MTN — Martin State</a>
+        <a href="booking.html">ESN — Easton/Newnam Field</a>
+        <a href="booking.html">VKX — Potomac Airfield</a>
+        <a href="booking.html">W32 — Washington Executive/Hyde Field</a>
+        <a href="booking.html">2W5 — Maryland Airport</a>
       </div>
     </div>
   </section>
