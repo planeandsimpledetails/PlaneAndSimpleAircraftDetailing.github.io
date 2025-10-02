@@ -4,51 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Thank You | Plane & Simple</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    :root { --brand-blue:#001126; --brand-gold:#D4AF37 }
-    body { font-family:'Open Sans',sans-serif; background:var(--brand-blue); color:#fff; margin:0; padding:0; text-align:center }
-    header, footer { padding:24px; opacity:0; animation:fadeIn .9s ease .2s forwards }
-    h1 { font-family:'Cinzel',serif; color:var(--brand-gold); font-size:2.2rem; opacity:0; transform:translateY(20px); animation:fadeUp 1s ease .8s forwards }
-    p { max-width:700px; margin:20px auto; line-height:1.6; color:#fff; opacity:0; transform:translateY(20px); animation:fadeUp 1s ease 1s forwards }
-    .cta { display:inline-block; margin-top:20px; background:var(--brand-gold); color:var(--brand-blue); padding:12px 28px; border-radius:28px; text-decoration:none; font-weight:700; transition:all .3s; opacity:0; transform:translateY(20px); animation:fadeUp 1s ease 1.2s forwards }
-    .cta:hover { transform:translateY(-2px); box-shadow:0 10px 20px rgba(212,175,55,.35) }
-    
-    /* Logo container with glowing orbit */
-    .logo-container { margin:30px auto 20px; position:relative; width:220px; height:220px; display:grid; place-items:center; opacity:0; transform:translateY(20px); animation:fadeUp 1s ease .6s forwards }
-    .logo-container::before { content:""; position:absolute; inset:0; border-radius:50%; background:radial-gradient(circle, rgba(212,175,55,0.35), rgba(212,175,55,0) 70%); filter:blur(8px); animation:pulse 6s ease-in-out infinite }
-    .logo-container img { width:160px; height:160px; border-radius:50%; z-index:2; box-shadow:0 0 40px rgba(212,175,55,.6), 0 0 80px rgba(212,175,55,.4) }
-    .orbit { position:absolute; inset:0; margin:auto; width:240px; height:240px; border-radius:50%; z-index:1; pointer-events:none;
-      -webkit-mask: radial-gradient(circle, transparent 95px, #000 95px 120px, transparent 120px);
-              mask: radial-gradient(circle, transparent 95px, #000 95px 120px, transparent 120px);
-    }
-    .orbit::before { content:""; position:absolute; inset:-12px; border-radius:50%;
-      background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.95) 0 10px, rgba(212,175,55,0) 26px);
-      filter: blur(10px); animation:orbit-spin 8s linear infinite;
-    }
-    
-    @keyframes orbit-spin { to { transform:rotate(360deg) } }
-    @keyframes pulse { 0%,100% { box-shadow:0 0 28px rgba(212,175,55,.6), 0 0 70px rgba(212,175,55,.35) } 50% { box-shadow:0 0 46px rgba(212,175,55,.95), 0 0 110px rgba(212,175,55,.55) } }
-    @keyframes fadeIn { to { opacity:1 } }
-    @keyframes fadeUp { to { opacity:1; transform:translateY(0) } }
+    body { font-family: 'Open Sans', sans-serif; background: #001126; color: #fff; text-align:center; padding:60px; }
+    h1 { font-family: 'Cinzel', serif; color:#D4AF37; font-size:2.2rem; }
+    p { margin-top:20px; font-size:1.1rem; }
+    a { display:inline-block; margin-top:30px; padding:12px 28px; background:#D4AF37; color:#001126; text-decoration:none; font-weight:700; border-radius:30px; }
+    a:hover { background:#b48b25; color:#fff; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <div class="orbit"></div>
-      <img src="Logo.png" alt="Plane & Simple Logo">
-    </div>
-    <h1>Thank You for Your Booking</h1>
-  </header>
-
-  <main>
-    <p>Your request has been received. A member of the <strong>Plane &amp; Simple</strong> team will review your booking and reach out to confirm the details shortly.</p>
-    <a href="index.html" class="cta">Return to Home</a>
-  </main>
-
-  <footer>
-    <p>© 2025 Plane & Simple Aircraft Detailing — Serving the Greater Washington, D.C. Region</p>
-  </footer>
+  <h1>Thank You!</h1>
+  <p>Your booking request has been submitted successfully.<br>
+     A member of the Plane &amp; Simple team will respond shortly.</p>
+  <a href="index.html">Return to Home</a>
 </body>
 </html>
