@@ -135,8 +135,14 @@
     }
     .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 24px rgba(212,175,55,.6);transform:translateY(0)}
 
-    /* Sections, cards, packages, gallery, footer ... */
-    /* (Keep all your original code for About, Services, Packages, Gallery, Airports, Footer, etc.) */
+    /* Sections and footer */
+    section{padding:100px 0}
+    .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--brand-gold);margin-bottom:14px;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease forwards}
+    .gold-line{width:110px;height:2px;margin:14px auto 40px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
+    .alt{background:linear-gradient(180deg,#031020,var(--brand-blue));color:#fff}
+    footer{background:var(--brand-blue);color:#cfd7e3;padding:40px}
+    @keyframes fadeIn{to{opacity:1}}
+    @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
   </style>
 </head>
 <body>
@@ -158,13 +164,13 @@
     </div>
   </header>
 
-  <!-- Hero with <img src> -->
+  <!-- Hero -->
   <section class="hero">
     <img src="intro.png" alt="Intro Background" class="bg">
     <div class="hero-inner">
       <div class="crest" aria-label="Illuminated Plane & Simple logo">
         <div class="ring" aria-hidden="true"></div>
-        <img src="Logo.png" alt="Plane & Simple Logo">
+        <img src="logo.png" alt="Plane & Simple Logo">
       </div>
       <h1>Plane &amp; Simple</h1>
       <div class="subtitle">Aircraft Detailing</div>
@@ -172,8 +178,24 @@
     </div>
   </section>
 
-  <!-- About, Services, Packages, Gallery, Airports, Footer -->
-  <!-- (Paste back your original sections here, unchanged — only the hero part is modified) -->
+  <!-- About Section -->
+  <section id="about" class="alt">
+    <div class="container">
+      <h2 class="sec-head">About Plane &amp; Simple</h2>
+      <div class="gold-line"></div>
+      <p class="lead">
+        Plane &amp; Simple is a luxury aircraft detailing company serving the greater Washington, D.C. region.
+        We deliver concierge-level exterior and cabin care, brightwork refinement, and protective finishes for
+        private planes to corporate jets.
+      </p>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Email: planeandsimpledetails@gmail.com</p>
+    <p>Phone: (202) 805-3443</p>
+    <p>Service Area: Greater Washington, D.C.</p>
+  </footer>
 </body>
 </html>
