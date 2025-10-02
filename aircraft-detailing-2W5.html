@@ -11,22 +11,18 @@
     body{font-family:'Open Sans',sans-serif;background:#fafafa;color:#111;text-align:center;margin:0;padding:0}
     header,footer{background:var(--brand-blue);color:#fff;padding:24px;opacity:0;animation:fadeIn .9s ease .2s forwards}
 
-    /* Logo + Ring */
     .logo-container{margin:20px auto 6px;position:relative;width:220px;height:220px;display:grid;place-items:center;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease .6s forwards}
     .logo-container::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(closest-side, rgba(212,175,55,0.35), rgba(212,175,55,0.0) 70%);filter:blur(6px);animation:pulse 6s ease-in-out infinite}
     .logo-container img{width:220px;height:220px;border-radius:50%;border:4px solid transparent;
       background:conic-gradient(from 0deg,#D4AF37 0%,transparent 25%,#D4AF37 50%,transparent 75%,#D4AF37 100%);
       filter:drop-shadow(0 0 10px rgba(212,175,55,.7));animation:pulse 7s ease-in-out infinite;z-index:1}
 
-    /* Headings */
     h1{font-family:'Cinzel',serif;color:var(--brand-gold);opacity:0;transform:translateY(16px);animation:fadeUp .9s ease .9s forwards}
     .content{max-width:900px;margin:20px auto;line-height:1.65;opacity:0;transform:translateY(16px);animation:fadeUp .9s ease 1.1s forwards}
 
-    /* Buttons */
     .cta{display:inline-block;margin-top:20px;background:var(--brand-gold);color:var(--brand-blue);padding:10px 20px;border-radius:26px;text-decoration:none;font-weight:700;transition:all .3s}
     .cta:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(212,175,55,.35)}
 
-    /* Form */
     form{max-width:520px;margin:40px auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:left}
     form label{display:block;margin:12px 0 6px;font-weight:600}
     form input,form select,form textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px}
@@ -35,7 +31,6 @@
 
     footer{background:var(--brand-blue);color:#cfd7e3;padding:20px;font-size:.9rem;margin-top:40px}
 
-    /* Animations */
     @keyframes pulse{0%,100%{box-shadow:0 0 28px rgba(212,175,55,.6), 0 0 70px rgba(212,175,55,.35)}50%{box-shadow:0 0 46px rgba(212,175,55,.95), 0 0 110px rgba(212,175,55,.55)}}
     @keyframes fadeIn{to{opacity:1}}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
@@ -43,13 +38,11 @@
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <div class="logo-container"><img src="Logo.png" alt="Plane & Simple Logo"></div>
   <h1>Plane & Simple — Aircraft Detailing at Maryland Airport (2W5)</h1>
 </header>
 
-<!-- Main Content -->
 <main class="content">
   <p>Plane & Simple provides premium aircraft detailing at Maryland Airport (2W5). We service jets, turboprops, single & multi engine, helicopters, gliders, and warbirds.</p>
   <a href="#booking" class="cta">Book Now</a>
@@ -60,15 +53,11 @@
   </p>
 
   <div style="margin-top:40px"><a href="index.html">← Back to Home</a></div>
-
-  <h3 style="margin-top:40px;color:#001126">Nearby Airports</h3>
-  <a href="aircraft-detailing-W32.html">W32 — Washington Executive/Hyde Field</a><br/>
 </main>
 
-<!-- Booking Form -->
 <section id="booking">
   <form action="https://formspree.io/f/mgvnyann" method="POST">
-    <input type="hidden" name="_redirect" value="https://planeandsimpleaircraftdetailing.github.io/thankyou.html">
+    <input type="hidden" name="_redirect" value="thankyou.html">
 
     <label for="name">Full Name</label>
     <input type="text" id="name" name="name" required>
@@ -95,7 +84,6 @@
   </form>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>© 2025 Plane & Simple Aircraft Detailing</p>
 </footer>
