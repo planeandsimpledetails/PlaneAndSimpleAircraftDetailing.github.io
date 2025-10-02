@@ -15,11 +15,11 @@
       --maxw:1200px;
       --t: all .45s ease;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
+    *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:'Open Sans',sans-serif;
-      background:#fafafa;color:#111;margin:0;text-align:center;scroll-behavior:smooth
+      background:#fafafa;color:#111;text-align:center;
+      scroll-behavior:smooth
     }
     .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
@@ -31,8 +31,9 @@
     }
     .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 40px}
     .brandline{
-      font-family:'Cinzel',serif;color:var(--brand-gold);font-weight:700;
-      font-size:clamp(1.6rem,3vw,2rem);letter-spacing:1.5px;flex:1;text-align:left
+      font-family:'Cinzel',serif;color:var(--brand-gold);
+      font-weight:700;font-size:clamp(1.6rem,3vw,2rem);
+      letter-spacing:1.5px;flex:1;text-align:left
     }
     nav{flex:2}
     nav ul{list-style:none;display:flex;justify-content:center;gap:30px;margin:0;padding:0}
@@ -51,24 +52,24 @@
 
     /* Hero */
     .hero{
-      position:relative;height:100vh;display:flex;align-items:center;justify-content:center;
+      position:relative;height:100vh;
+      display:flex;align-items:center;justify-content:center;
       background:url('intro.png') center/cover no-repeat fixed;
       opacity:0;animation:heroIn 1.6s ease .2s forwards
     }
     @keyframes heroIn{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
     .hero::before{content:"";position:absolute;inset:0;background:rgba(0,17,38,.45);opacity:0;animation:fadeIn 1.2s ease .6s forwards}
-    .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 20px}
 
-    /* Crest */
+    /* Crest Logo */
     .crest{
-      width:240px;height:240px;margin:0 auto 24px;position:relative;display:grid;place-items:center;
+      width:240px;height:240px;margin:20px auto;position:relative;display:grid;place-items:center;
       opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1s forwards
     }
     .crest::before{
       content:"";position:absolute;inset:0;border-radius:50%;
       background:radial-gradient(circle, rgba(212,175,55,0.35) 0%, rgba(212,175,55,0) 80%);
-      filter:blur(10px);
-      z-index:0;animation:pulse 6s ease-in-out infinite
+      filter:blur(10px);z-index:0;animation:pulse 6s ease-in-out infinite
     }
     .crest img{
       width:190px;height:190px;border-radius:50%;position:relative;z-index:2;
@@ -77,83 +78,38 @@
     .ring{
       position:absolute;inset:0;margin:auto;width:240px;height:240px;border-radius:50%;
       border:4px solid transparent;
-      background:conic-gradient(
-        from 0deg,
-        var(--brand-gold) 0%,
-        transparent 25%,
-        var(--brand-gold) 50%,
-        transparent 75%,
-        var(--brand-gold) 100%
-      );
+      background:conic-gradient(from 0deg,var(--brand-gold) 0%,transparent 25%,var(--brand-gold) 50%,transparent 75%,var(--brand-gold) 100%);
       filter:drop-shadow(0 0 12px rgba(212,175,55,.7));
-      animation:rotate 18s linear infinite, pulse 7s ease-in-out infinite;
-      z-index:1;
+      animation:rotate 18s linear infinite, pulse 7s ease-in-out infinite;z-index:1;
     }
 
     /* Animations */
     @keyframes rotate{to{transform:rotate(360deg)}}
     @keyframes pulse{
-      0%,100%{box-shadow:0 0 30px rgba(212,175,55,.6), 0 0 70px rgba(212,175,55,.35)}
-      50%{box-shadow:0 0 48px rgba(212,175,55,.95), 0 0 110px rgba(212,175,55,.55)}
+      0%,100%{box-shadow:0 0 30px rgba(212,175,55,.6),0 0 70px rgba(212,175,55,.35)}
+      50%{box-shadow:0 0 48px rgba(212,175,55,.95),0 0 110px rgba(212,175,55,.55)}
     }
     @keyframes fadeIn{to{opacity:1}}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 
-    /* Titles */
-    h1{
-      font-family:'Cinzel',serif;color:var(--brand-gold);
-      font-size:clamp(2.6rem,6vw,4.6rem);margin:.2rem 0;
-      opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.2s forwards
-    }
-    .subtitle{
-      color:#fff;letter-spacing:.45rem;font-weight:600;margin:.2rem 0 1rem;text-transform:uppercase;
-      opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.35s forwards
-    }
-    .cta{
-      background:var(--brand-gold);color:var(--brand-blue);
-      padding:14px 34px;border-radius:30px;font-weight:800;text-decoration:none;
-      box-shadow:0 8px 22px rgba(212,175,55,.35);transition:var(--t);
-      opacity:0;transform:translateY(22px);animation:fadeUp 1s ease 1.5s forwards
-    }
+    /* Hero Text */
+    h1{font-family:'Cinzel',serif;color:var(--brand-gold);font-size:clamp(2.6rem,6vw,4.6rem);margin:.2rem 0;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.2s forwards}
+    .subtitle{color:#fff;letter-spacing:.45rem;font-weight:600;margin:.2rem 0 1rem;text-transform:uppercase;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.35s forwards}
+    .cta{background:var(--brand-gold);color:var(--brand-blue);padding:14px 34px;border-radius:30px;font-weight:800;text-decoration:none;box-shadow:0 8px 22px rgba(212,175,55,.35);transition:var(--t);opacity:0;transform:translateY(22px);animation:fadeUp 1s ease 1.5s forwards}
     .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 24px rgba(212,175,55,.6)}
 
-    /* Sections */
     section{padding:100px 0}
-    .sec-head{
-      font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--brand-gold);
-      margin-bottom:14px;opacity:0;transform:translateY(30px)
-    }
+    .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--brand-gold);margin-bottom:14px;opacity:0;transform:translateY(30px)}
     .gold-line{width:110px;height:2px;margin:14px auto 40px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
     .alt{background:linear-gradient(180deg,#031020,var(--brand-blue));color:#fff}
 
-    /* Cards */
-    .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:34px}
-    .card{background:#0d1625;border:1px solid rgba(212,175,55,.15);border-top:3px solid var(--brand-gold);border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:var(--t);opacity:0;transform:translateY(30px)}
-    .card img{width:100%;height:200px;object-fit:cover}
-    .card .content{padding:22px}
-    .card h3{font-family:'Cinzel',serif;color:var(--brand-gold)}
-    .card ul{margin:15px 0;text-align:left;color:#cfd8e6;line-height:1.7}
-    .card:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(0,0,0,.35)}
-
-    /* Packages */
-    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-    .package{background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.1);padding:30px;transition:var(--t);opacity:0;transform:translateY(30px)}
-    .package:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(0,0,0,.2)}
-    .package h3{font-family:'Cinzel',serif;color:var(--brand-blue);margin-bottom:10px}
-    .package h4{color:var(--brand-gold);margin-bottom:15px}
-    .package ul{list-style:none;padding:0;margin:0;text-align:left;color:#333;line-height:1.6}
-    .package li::before{content:"• ";color:var(--brand-gold)}
-    .package .cta{margin-top:20px;display:inline-block}
-
-    /* Gallery */
-    .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
-    .pane{flex:0 0 100%;height:70vh;scroll-snap-align:center;position:relative}
-    .pane img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
-    .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:3rem;color:#fff;letter-spacing:.5rem;background:rgba(0,17,38,.28)}
-
     /* Airports */
     #airports{background:url('runway.jpg') center/cover no-repeat; color:#fff;}
-    .air-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;max-width:900px;margin:0 auto}
+    .air-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;max-width:900px;margin:0 auto
+    }
     .air-grid a{
       display:block;
       background:#fff;
@@ -164,8 +120,23 @@
       text-decoration:none;
       transition:var(--t);
       box-shadow:0 6px 14px rgba(0,0,0,.15);
+      opacity:0;transform:translateY(30px)
     }
     .air-grid a:hover{background:var(--brand-gold);color:#fff;transform:translateY(-4px)}
+
+    /* Mobile airports horizontal */
+    @media (max-width:768px){
+      .hero{
+        background:url('intro.png') center/contain no-repeat var(--brand-blue);
+        height:auto;padding:120px 0 100px;
+      }
+      .air-grid{
+        display:flex;overflow-x:auto;gap:15px;scroll-snap-type:x mandatory;padding:20px
+      }
+      .air-grid a{
+        flex:0 0 auto;scroll-snap-align:center;min-width:200px
+      }
+    }
 
     /* Footer */
     footer{background:var(--brand-blue);color:#cfd7e3;padding:40px}
@@ -193,154 +164,11 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="crest" aria-label="Illuminated Plane & Simple logo">
-        <div class="ring" aria-hidden="true"></div>
-        <img src="Logo.png" alt="Plane & Simple Logo">
-      </div>
+      <div class="crest"><div class="ring"></div><img src="Logo.png" alt="Plane & Simple Logo"></div>
       <h1>Plane &amp; Simple</h1>
       <div class="subtitle">Aircraft Detailing</div>
       <a href="#services" class="cta">Explore Services</a>
     </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="alt">
-    <div class="container">
-      <h2 class="sec-head">About Plane &amp; Simple</h2>
-      <div class="gold-line"></div>
-      <p class="lead">
-        Plane &amp; Simple is a luxury aircraft detailing company serving the greater Washington, D.C. region.
-        We deliver concierge-level exterior and cabin care, brightwork refinement, and protective finishes for
-        private planes to corporate jets. From ramp-ready turnarounds to bespoke fleet programs, our Bronze through
-        Ultra packages are tailored to your mission profile and executed with discretion, precision, and a
-        presentation that endures beyond the runway.
-      </p>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="alt">
-    <div class="container">
-      <h2 class="sec-head">Bespoke Aircraft Care</h2>
-      <div class="gold-line"></div>
-      <div class="tiers">
-        <article class="card">
-          <img src="exterior_wash.png" alt="Exterior Wash">
-          <div class="content">
-            <h3>Exterior</h3>
-            <ul>
-              <li>Dry or Wet Wash</li>
-              <li>Brightwork Polish</li>
-              <li>Paint Sealant</li>
-              <li>De-Icing Residue Removal</li>
-              <li>Landing Gear Treatment</li>
-            </ul>
-          </div>
-        </article>
-        <article class="card">
-          <img src="cabin_detail.png" alt="Cabin Detail">
-          <div class="content">
-            <h3>Interior</h3>
-            <ul>
-              <li>Cabin, Cockpit &amp; Galley Cleaning</li>
-              <li>Leather Conditioning</li>
-              <li>Carpet Extraction</li>
-              <li>Odor Elimination</li>
-              <li>Lavatory Sterilization</li>
-            </ul>
-          </div>
-        </article>
-        <article class="card">
-          <img src="brightwork_polish.png" alt="Brightwork Polish">
-          <div class="content">
-            <h3>Detail</h3>
-            <ul>
-              <li>Ceramic Coating</li>
-              <li>Post-Flight Ramp Turn</li>
-              <li>Window Polishing</li>
-              <li>Hangar Cleaning</li>
-              <li>Fleet Membership Plans</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Packages -->
-  <section id="packages">
-    <div class="container">
-      <h2 class="sec-head">Our Packages</h2>
-      <div class="gold-line"></div>
-      <div class="packages">
-        <div class="package">
-          <h3>Bronze</h3><h4>Ramp Ready</h4>
-          <ul>
-            <li>Quick Exterior Wash</li>
-            <li>Bug &amp; Tar Removal</li>
-            <li>Quick Cabin Reset</li>
-          </ul>
-          <p class="pricing"><strong>From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
-        </div>
-        <div class="package">
-          <h3>Silver</h3><h4>Executive</h4>
-          <ul>
-            <li>Full Exterior Wash</li>
-            <li>Brightwork Touch-Up</li>
-            <li>Cabin Cleaning</li>
-            <li>Leather Conditioning</li>
-            <li>Lavatory Refresh</li>
-          </ul>
-          <p class="pricing"><strong>From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
-        </div>
-        <div class="package">
-          <h3>Gold</h3><h4>Prestige</h4>
-          <ul>
-            <li>Exterior Polishing &amp; Sealant</li>
-            <li>Full Brightwork Polish</li>
-            <li>Deep Cabin Clean</li>
-            <li>Carpet Extraction</li>
-            <li>Lavatory Sterilization</li>
-          </ul>
-          <p class="pricing"><strong>From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
-        </div>
-        <div class="package">
-          <h3>Platinum</h3><h4>Signature</h4>
-          <ul>
-            <li>Everything in Gold</li>
-            <li>Ceramic Coating</li>
-            <li>Window Polishing</li>
-            <li>Cabin Sanitization</li>
-            <li>Landing Gear Treatment</li>
-          </ul>
-          <p class="pricing"><strong>From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</strong></p>
-          <a href="#contact" class="cta">Select</a>
-        </div>
-        <div class="package">
-          <h3>Ultra</h3><h4>Bespoke Fleet</h4>
-          <ul>
-            <li>Everything in Platinum</li>
-            <li>AOG Ramp Response</li>
-            <li>Custom Scenting</li>
-            <li>Brightwork Protection Film</li>
-            <li>Fleet Membership</li>
-          </ul>
-          <p class="pricing"><strong>Custom Fleet Programs · $10k–$50k+ annually</strong></p>
-          <a href="#contact" class="cta">Select</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="gallery">
-    <div class="pane"><img src="percision.png" alt="Cockpit Detail"><div class="word">Precision</div></div>
-    <div class="pane"><img src="reflection.png" alt="Brightwork"><div class="word">Reflection</div></div>
-    <div class="pane"><img src="legacy.png" alt="Fleet"><div class="word">Legacy</div></div>
-    <div class="pane"><img src="detail.png" alt="Detail"><div class="word">Detail</div></div>
   </section>
 
   <!-- Airports -->
@@ -349,20 +177,20 @@
       <h2 class="sec-head">Airports We Serve</h2>
       <div class="gold-line"></div>
       <div class="air-grid">
-        <a href="aircraft-detailing-IAD.html">IAD — Washington Dulles International</a>
-        <a href="aircraft-detailing-BWI.html">BWI — Baltimore/Washington International</a>
-        <a href="aircraft-detailing-DCA.html">DCA — Ronald Reagan Washington National</a>
+        <a href="aircraft-detailing-IAD.html">IAD — Washington Dulles</a>
+        <a href="aircraft-detailing-BWI.html">BWI — Baltimore/Washington</a>
+        <a href="aircraft-detailing-DCA.html">DCA — Ronald Reagan National</a>
         <a href="aircraft-detailing-HEF.html">HEF — Manassas Regional</a>
         <a href="aircraft-detailing-JYO.html">JYO — Leesburg Executive</a>
         <a href="aircraft-detailing-RMN.html">RMN — Stafford Regional</a>
         <a href="aircraft-detailing-CJR.html">CJR — Culpeper Regional</a>
-        <a href="aircraft-detailing-GAI.html">GAI — Montgomery County Airpark</a>
-        <a href="aircraft-detailing-CGS.html">CGS — College Park Airport</a>
+        <a href="aircraft-detailing-GAI.html">GAI — Montgomery Airpark</a>
+        <a href="aircraft-detailing-CGS.html">CGS — College Park</a>
         <a href="aircraft-detailing-ANP.html">ANP — Annapolis (Lee)</a>
         <a href="aircraft-detailing-MTN.html">MTN — Martin State</a>
-        <a href="aircraft-detailing-ESN.html">ESN — Easton/Newnam Field</a>
+        <a href="aircraft-detailing-ESN.html">ESN — Easton/Newnam</a>
         <a href="aircraft-detailing-VKX.html">VKX — Potomac Airfield</a>
-        <a href="aircraft-detailing-W32.html">W32 — Washington Executive/Hyde Field</a>
+        <a href="aircraft-detailing-W32.html">W32 — Washington Exec/Hyde</a>
         <a href="aircraft-detailing-2W5.html">2W5 — Maryland Airport</a>
       </div>
     </div>
@@ -372,7 +200,7 @@
   <footer id="contact">
     <p>Email: planeandsimpledetails@gmail.com</p>
     <p>Phone: (202) 805-3443</p>
-    <p>Service Area: Greater Washington, D.C. (IAD, BWI, HEF, JYO, DCA via escort)</p>
+    <p>Service Area: Greater Washington, D.C.</p>
   </footer>
 
   <!-- Animate on scroll -->
@@ -385,7 +213,7 @@
         }
       })
     },{threshold:0.2});
-    document.querySelectorAll('.card,.package,.sec-head,.air-grid a').forEach(el=>observer.observe(el));
+    document.querySelectorAll('.sec-head,.air-grid a').forEach(el=>observer.observe(el));
   </script>
 </body>
 </html>
