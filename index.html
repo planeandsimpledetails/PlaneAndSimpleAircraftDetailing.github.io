@@ -49,14 +49,14 @@
     }
     .header-cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 10px rgba(212,175,55,.5)}
 
-    /* Hamburger (hidden desktop) */
+    /* Hamburger */
     .hamburger{
-      display:none;font-size:1.8rem;color:var(--brand-gold);cursor:pointer;margin-left:20px;
+      display:none;font-size:2rem;color:var(--brand-gold);cursor:pointer;z-index:1100
     }
 
     /* Hero */
     .hero{
-      position:relative;height:100vh;display:flex;align-items:center;justify-content:center;
+      position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
       background:url('intro.png') center/cover no-repeat fixed;
       opacity:0;animation:heroIn 1.6s ease .2s forwards
     }
@@ -133,6 +133,7 @@
       nav ul.active{display:flex}
       .hamburger{display:block}
       .header-cta{display:none}
+      .hero{background:url('intro.png') center top/contain no-repeat;background-color:var(--brand-blue);min-height:100vh}
     }
     @media (max-width:600px){
       .crest{width:160px;height:160px}
@@ -366,8 +367,12 @@
     document.querySelectorAll('.card,.package,.sec-head').forEach(el=>observer.observe(el));
 
     // Mobile menu toggle
-    document.querySelector(".hamburger").addEventListener("click", ()=>{
-      document.querySelector("nav ul").classList.toggle("active");
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
+
+    hamburger.addEventListener("click", ()=>{
+      navMenu.classList.toggle("active");
+      hamburger.textContent = navMenu.classList.contains("active") ? "✕" : "☰";
     });
   </script>
 </body>
