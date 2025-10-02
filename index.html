@@ -19,7 +19,7 @@
     html,body{margin:0;padding:0}
     body{
       font-family:'Open Sans',sans-serif;
-      background:#fafafa;color:#111;margin:0;text-align:center;scroll-behavior:smooth
+      background:#fafafa;color:#111;text-align:center;scroll-behavior:smooth
     }
     .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
@@ -29,123 +29,99 @@
       background:rgba(0,17,38,.85);backdrop-filter:blur(10px);
       opacity:0;animation:fadeIn .8s ease .2s forwards
     }
-    .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;position:relative}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
     .brandline{
       font-family:'Cinzel',serif;color:var(--brand-gold);font-weight:700;
-      font-size:clamp(1.6rem,3vw,2rem);letter-spacing:1.5px;flex:1;text-align:left
+      font-size:1.4rem;letter-spacing:1px
     }
-    nav{flex:2}
-    nav ul{list-style:none;display:flex;justify-content:center;gap:30px;margin:0;padding:0}
+    nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0}
     nav a{
-      color:#fff;text-decoration:none;font-weight:600;letter-spacing:.6px;position:relative;
+      color:#fff;text-decoration:none;font-weight:600;letter-spacing:.5px;position:relative;
       padding-bottom:4px;opacity:0;animation:fadeUp .8s ease .6s forwards
     }
     nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:var(--brand-gold);transform:translateX(-50%);transition:var(--t)}
     nav a:hover::after{width:100%}
     .header-cta{
-      flex:1;margin-left:auto;background:var(--brand-gold);color:var(--brand-blue);
-      padding:10px 18px;border-radius:24px;font-weight:700;font-size:1rem;cursor:pointer;border:none;
-      transition:var(--t);text-align:center;opacity:0;animation:fadeUp .8s ease .7s forwards
+      display:none; /* hidden on mobile */
     }
-    .header-cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 10px rgba(212,175,55,.5)}
-
-    /* Hamburger */
     .hamburger{
-      display:none;font-size:2rem;color:var(--brand-gold);cursor:pointer;z-index:1100
+      font-size:2rem;color:var(--brand-gold);cursor:pointer;z-index:1100
     }
+    nav ul{display:none;flex-direction:column;gap:18px;background:rgba(0,17,38,.95);
+      position:absolute;top:60px;right:10px;width:200px;padding:20px;border-radius:8px}
+    nav ul.active{display:flex}
 
     /* Hero */
     .hero{
       position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
-      background:url('intro.png') center/cover no-repeat fixed;
+      background:url('intro.png') center center/cover no-repeat;
+      background-color:var(--brand-blue);
       opacity:0;animation:heroIn 1.6s ease .2s forwards
     }
     @keyframes heroIn{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
     .hero::before{content:"";position:absolute;inset:0;background:rgba(0,17,38,.45);opacity:0;animation:fadeIn 1.2s ease .6s forwards}
-    .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
 
     /* Crest */
-    .crest{width:240px;height:240px;margin:0 auto 24px;position:relative;display:grid;place-items:center;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1s forwards}
+    .crest{width:160px;height:160px;margin:0 auto 20px;position:relative;display:grid;place-items:center;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease 1s forwards}
     .crest::before{
       content:"";position:absolute;inset:0;border-radius:50%;
       background:radial-gradient(circle, rgba(212,175,55,0.35) 0%, rgba(212,175,55,0) 80%);
-      filter:blur(10px);z-index:0;animation:pulse 6s ease-in-out infinite
+      filter:blur(8px);z-index:0;animation:pulse 6s ease-in-out infinite
     }
-    .crest img{width:190px;height:190px;border-radius:50%;position:relative;z-index:2;box-shadow:0 0 40px rgba(212,175,55,.6), 0 0 80px rgba(212,175,55,.4)}
+    .crest img{width:120px;height:120px;border-radius:50%;position:relative;z-index:2;box-shadow:0 0 30px rgba(212,175,55,.6), 0 0 60px rgba(212,175,55,.4)}
     .ring{
-      position:absolute;inset:0;margin:auto;width:240px;height:240px;border-radius:50%;
+      position:absolute;inset:0;margin:auto;width:160px;height:160px;border-radius:50%;
       background:conic-gradient(from 0deg,var(--brand-gold) 0%,transparent 25%,var(--brand-gold) 50%,transparent 75%,var(--brand-gold) 100%);
-      filter:drop-shadow(0 0 12px rgba(212,175,55,.7));
+      filter:drop-shadow(0 0 10px rgba(212,175,55,.7));
       animation:rotate 18s linear infinite,pulse 7s ease-in-out infinite;z-index:1
     }
     @keyframes rotate{to{transform:rotate(360deg)}}
     @keyframes pulse{
-      0%,100%{box-shadow:0 0 30px rgba(212,175,55,.6),0 0 70px rgba(212,175,55,.35)}
-      50%{box-shadow:0 0 48px rgba(212,175,55,.95),0 0 110px rgba(212,175,55,.55)}
+      0%,100%{box-shadow:0 0 25px rgba(212,175,55,.6),0 0 50px rgba(212,175,55,.35)}
+      50%{box-shadow:0 0 35px rgba(212,175,55,.9),0 0 80px rgba(212,175,55,.5)}
     }
 
-    h1{font-family:'Cinzel',serif;color:var(--brand-gold);font-size:clamp(2.6rem,6vw,4.6rem);margin:.2rem 0;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.2s forwards}
-    .subtitle{color:#fff;letter-spacing:.45rem;font-weight:600;margin:.2rem 0 1rem;text-transform:uppercase;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1.35s forwards}
-    .cta{background:var(--brand-gold);color:var(--brand-blue);padding:14px 34px;border-radius:30px;font-weight:800;text-decoration:none;box-shadow:0 8px 22px rgba(212,175,55,.35);transition:var(--t);opacity:0;transform:translateY(22px);animation:fadeUp 1s ease 1.5s forwards}
-    .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 24px rgba(212,175,55,.6);transform:translateY(0)}
+    h1{font-family:'Cinzel',serif;color:var(--brand-gold);font-size:2rem;margin:.2rem 0;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease 1.2s forwards}
+    .subtitle{color:#fff;letter-spacing:.25rem;font-weight:600;margin:.2rem 0 1rem;text-transform:uppercase;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease 1.35s forwards}
+    .cta{background:var(--brand-gold);color:var(--brand-blue);padding:10px 22px;border-radius:30px;font-weight:800;text-decoration:none;box-shadow:0 6px 18px rgba(212,175,55,.3);transition:var(--t);opacity:0;transform:translateY(18px);animation:fadeUp 1s ease 1.5s forwards}
+    .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 20px rgba(212,175,55,.6);transform:translateY(0)}
 
-    section{padding:100px 0}
-    .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--brand-gold);margin-bottom:14px;opacity:0;transform:translateY(30px);animation:fadeUp 1s ease forwards}
-    .gold-line{width:110px;height:2px;margin:14px auto 40px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
+    section{padding:60px 0}
+    .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:1.4rem;color:var(--brand-gold);margin-bottom:12px;opacity:0;transform:translateY(20px);animation:fadeUp 1s ease forwards}
+    .gold-line{width:90px;height:2px;margin:12px auto 30px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
     .alt{background:linear-gradient(180deg,#031020,var(--brand-blue));color:#fff}
 
-    .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:34px}
-    .card{background:#0d1625;border:1px solid rgba(212,175,55,.15);border-top:3px solid var(--brand-gold);border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:var(--t);opacity:0;transform:translateY(30px)}
-    .card img{width:100%;height:200px;object-fit:cover}
-    .card .content{padding:22px}
+    .tiers{display:grid;grid-template-columns:1fr;gap:20px}
+    .card{background:#0d1625;border:1px solid rgba(212,175,55,.15);border-top:3px solid var(--brand-gold);border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:var(--t);opacity:0;transform:translateY(20px)}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card .content{padding:18px}
     .card h3{font-family:'Cinzel',serif;color:var(--brand-gold)}
-    .card ul{margin:15px 0;text-align:left;color:#cfd8e6;line-height:1.7}
-    .card:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(0,0,0,.35)}
+    .card ul{margin:12px 0;text-align:left;color:#cfd8e6;line-height:1.6}
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.3)}
 
-    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-    .package{background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.1);padding:30px;transition:var(--t);opacity:0;transform:translateY(30px)}
-    .package:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(0,0,0,.2)}
-    .package h3{font-family:'Cinzel',serif;color:var(--brand-blue);margin-bottom:10px}
-    .package h4{color:var(--brand-gold);margin-bottom:15px}
-    .package ul{list-style:none;padding:0;margin:0;text-align:left;color:#333;line-height:1.6}
+    .packages{display:grid;grid-template-columns:1fr;gap:16px}
+    .package{background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.1);padding:20px;transition:var(--t);opacity:0;transform:translateY(20px)}
+    .package:hover{transform:translateY(-4px);box-shadow:0 12px 22px rgba(0,0,0,.2)}
+    .package h3{font-family:'Cinzel',serif;color:var(--brand-blue);margin-bottom:8px}
+    .package h4{color:var(--brand-gold);margin-bottom:12px}
+    .package ul{list-style:none;padding:0;margin:0;text-align:left;color:#333;line-height:1.5}
     .package li::before{content:"• ";color:var(--brand-gold)}
-    .package .cta{margin-top:20px;display:inline-block}
+    .package .cta{margin-top:14px;display:inline-block}
 
     .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
-    .pane{flex:0 0 100%;height:70vh;scroll-snap-align:center;position:relative}
-    .pane img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
-    .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:3rem;color:#fff;letter-spacing:.5rem;background:rgba(0,17,38,.28)}
+    .pane{flex:0 0 100%;height:60vh;scroll-snap-align:center;position:relative}
+    .pane img{width:100%;height:100%;object-fit:cover}
+    .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.8rem;color:#fff;letter-spacing:.3rem;background:rgba(0,17,38,.25)}
 
-    .air-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto}
+    .air-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:0 auto}
     .air-grid a{text-decoration:none;color:var(--brand-blue);font-weight:700}
 
-    footer{background:var(--brand-blue);color:#cfd7e3;padding:40px}
+    footer{background:var(--brand-blue);color:#cfd7e3;padding:20px;font-size:.9rem}
 
     @keyframes fadeIn{to{opacity:1}}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
-
-    .lead{max-width:900px;margin:0 auto;font-size:1.08rem;line-height:1.9;color:#cfd8e6}
-
-    /* Responsive tweaks */
-    @media (max-width:768px){
-      .nav-wrap{padding:12px 18px}
-      nav ul{display:none;flex-direction:column;gap:20px;background:rgba(0,17,38,.95);position:absolute;top:60px;right:0;width:220px;padding:20px;border-radius:8px 0 0 8px}
-      nav ul.active{display:flex}
-      .hamburger{display:block}
-      .header-cta{display:none}
-      .hero{background:url('intro.png') center top/contain no-repeat;background-color:var(--brand-blue);min-height:100vh}
-    }
-    @media (max-width:600px){
-      .crest{width:160px;height:160px}
-      .crest img{width:120px;height:120px}
-      .ring{width:160px;height:160px}
-      h1{font-size:2rem}
-      .subtitle{font-size:.9rem;letter-spacing:.25rem}
-      .cta{padding:12px 22px;font-size:.9rem}
-      .tiers,.packages{gap:16px}
-      .pane .word{font-size:1.6rem;letter-spacing:.2rem}
-      footer{padding:20px;font-size:.9rem}
-    }
+    .lead{max-width:90%;margin:0 auto;font-size:1rem;line-height:1.6;color:#cfd8e6}
   </style>
 </head>
 <body>
@@ -164,7 +140,6 @@
         </ul>
       </nav>
       <div class="hamburger">☰</div>
-      <button class="header-cta" onclick="location.href='#contact'">Book Now</button>
     </div>
   </header>
 
@@ -327,21 +302,10 @@
       <h2 class="sec-head">Airports We Serve</h2>
       <div class="gold-line"></div>
       <div class="air-grid">
-        <a href="aircraft-detailing-IAD.html">IAD — Washington Dulles International</a>
-        <a href="aircraft-detailing-BWI.html">BWI — Baltimore/Washington International</a>
-        <a href="aircraft-detailing-DCA.html">DCA — Ronald Reagan Washington National</a>
-        <a href="aircraft-detailing-HEF.html">HEF — Manassas Regional</a>
-        <a href="aircraft-detailing-JYO.html">JYO — Leesburg Executive</a>
-        <a href="aircraft-detailing-RMN.html">RMN — Stafford Regional</a>
-        <a href="aircraft-detailing-CJR.html">CJR — Culpeper Regional</a>
-        <a href="aircraft-detailing-GAI.html">GAI — Montgomery County Airpark</a>
-        <a href="aircraft-detailing-CGS.html">CGS — College Park Airport</a>
-        <a href="aircraft-detailing-ANP.html">ANP — Annapolis (Lee)</a>
-        <a href="aircraft-detailing-MTN.html">MTN — Martin State</a>
-        <a href="aircraft-detailing-ESN.html">ESN — Easton/Newnam Field</a>
-        <a href="aircraft-detailing-VKX.html">VKX — Potomac Airfield</a>
-        <a href="aircraft-detailing-W32.html">W32 — Washington Executive/Hyde Field</a>
-        <a href="aircraft-detailing-2W5.html">2W5 — Maryland Airport</a>
+        <a href="#">IAD — Washington Dulles International</a>
+        <a href="#">BWI — Baltimore/Washington International</a>
+        <a href="#">DCA — Ronald Reagan Washington National</a>
+        <a href="#">HEF — Manassas Regional</a>
       </div>
     </div>
   </section>
