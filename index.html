@@ -135,8 +135,10 @@
     }
     .cta:hover{background:#b48b25;color:#fff;box-shadow:0 0 24px rgba(212,175,55,.6);transform:translateY(0)}
 
-    /* Sections, cards, packages, gallery, footer ... */
-    /* (Keep all your original code for About, Services, Packages, Gallery, Airports, Footer, etc.) */
+    section{padding:100px 0}
+    .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--brand-gold);margin-bottom:14px;}
+    .gold-line{width:110px;height:2px;margin:14px auto 40px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
+    .alt{background:linear-gradient(180deg,#031020,var(--brand-blue));color:#fff}
   </style>
 </head>
 <body>
@@ -172,8 +174,176 @@
     </div>
   </section>
 
-  <!-- About, Services, Packages, Gallery, Airports, Footer -->
-  <!-- (Paste back your original sections here, unchanged — only the hero part is modified) -->
+  <!-- About -->
+  <section id="about" class="alt">
+    <div class="container">
+      <h2 class="sec-head">About Plane &amp; Simple</h2>
+      <div class="gold-line"></div>
+      <p class="lead">
+        Plane &amp; Simple is a luxury aircraft detailing company serving the greater Washington, D.C. region.
+        We deliver concierge-level exterior and cabin care, brightwork refinement, and protective finishes for
+        private planes to corporate jets. From ramp-ready turnarounds to bespoke fleet programs, our Bronze through
+        Ultra packages are tailored to your mission profile and executed with discretion, precision, and a
+        presentation that endures beyond the runway.
+      </p>
+    </div>
+  </section>
 
-</body>
-</html>
+  <!-- Services -->
+  <section id="services" class="alt">
+    <div class="container">
+      <h2 class="sec-head">Bespoke Aircraft Care</h2>
+      <div class="gold-line"></div>
+      <div class="tiers">
+        <article class="card">
+          <img src="exterior_wash.png" alt="Exterior Wash">
+          <div class="content">
+            <h3>Exterior</h3>
+            <ul>
+              <li>Dry or Wet Wash</li>
+              <li>Brightwork Polish</li>
+              <li>Paint Sealant</li>
+              <li>De-Icing Residue Removal</li>
+              <li>Landing Gear Treatment</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <img src="cabin_detail.png" alt="Cabin Detail">
+          <div class="content">
+            <h3>Interior</h3>
+            <ul>
+              <li>Cabin, Cockpit &amp; Galley Cleaning</li>
+              <li>Leather Conditioning</li>
+              <li>Carpet Extraction</li>
+              <li>Odor Elimination</li>
+              <li>Lavatory Sterilization</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <img src="brightwork_polish.png" alt="Brightwork Polish">
+          <div class="content">
+            <h3>Detail</h3>
+            <ul>
+              <li>Ceramic Coating</li>
+              <li>Post-Flight Ramp Turn</li>
+              <li>Window Polishing</li>
+              <li>Hangar Cleaning</li>
+              <li>Fleet Membership Plans</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages">
+    <div class="container">
+      <h2 class="sec-head">Our Packages</h2>
+      <div class="gold-line"></div>
+      <div class="packages">
+        <!-- Bronze -->
+        <div class="package">
+          <h3>Bronze</h3><h4>Ramp Ready</h4>
+          <ul>
+            <li>Quick Exterior Wash</li>
+            <li>Bug &amp; Tar Removal</li>
+            <li>Quick Cabin Reset</li>
+          </ul>
+          <p class="pricing"><strong>From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</strong></p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <!-- Silver -->
+        <div class="package">
+          <h3>Silver</h3><h4>Executive</h4>
+          <ul>
+            <li>Full Exterior Wash</li>
+            <li>Brightwork Touch-Up</li>
+            <li>Cabin Cleaning</li>
+            <li>Leather Conditioning</li>
+            <li>Lavatory Refresh</li>
+          </ul>
+          <p class="pricing"><strong>From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</strong></p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <!-- Gold -->
+        <div class="package">
+          <h3>Gold</h3><h4>Prestige</h4>
+          <ul>
+            <li>Exterior Polishing &amp; Sealant</li>
+            <li>Full Brightwork Polish</li>
+            <li>Deep Cabin Clean</li>
+            <li>Carpet Extraction</li>
+            <li>Lavatory Sterilization</li>
+          </ul>
+          <p class="pricing"><strong>From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</strong></p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <!-- Platinum -->
+        <div class="package">
+          <h3>Platinum</h3><h4>Signature</h4>
+          <ul>
+            <li>Everything in Gold</li>
+            <li>Ceramic Coating</li>
+            <li>Window Polishing</li>
+            <li>Cabin Sanitization</li>
+            <li>Landing Gear Treatment</li>
+          </ul>
+          <p class="pricing"><strong>From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</strong></p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <!-- Ultra -->
+        <div class="package">
+          <h3>Ultra</h3><h4>Bespoke Fleet</h4>
+          <ul>
+            <li>Everything in Platinum</li>
+            <li>AOG Ramp Response</li>
+            <li>Custom Scenting</li>
+            <li>Brightwork Protection Film</li>
+            <li>Fleet Membership</li>
+          </ul>
+          <p class="pricing"><strong>Custom Fleet Programs · $10k–$50k+ annually</strong></p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="pane"><img src="percision.png" alt="Cockpit Detail"><div class="word">Precision</div></div>
+    <div class="pane"><img src="reflection.png" alt="Brightwork"><div class="word">Reflection</div></div>
+    <div class="pane"><img src="legacy.png" alt="Fleet"><div class="word">Legacy</div></div>
+    <div class="pane"><img src="detail.png" alt="Detail"><div class="word">Detail</div></div>
+  </section>
+
+  <!-- Airports -->
+  <section id="airports" style="background:url('runway.jpg') center/cover no-repeat; color:#fff;">
+    <div class="container">
+      <h2 class="sec-head">Airports We Serve</h2>
+      <div class="gold-line"></div>
+      <div class="air-grid">
+        <a href="aircraft-detailing-IAD.html">IAD — Washington Dulles International</a>
+        <a href="aircraft-detailing-BWI.html">BWI — Baltimore/Washington International</a>
+        <a href="aircraft-detailing-DCA.html">DCA — Ronald Reagan Washington National</a>
+        <a href="aircraft-detailing-HEF.html">HEF — Manassas Regional</a>
+        <a href="aircraft-detailing-JYO.html">JYO — Leesburg Executive</a>
+        <a href="aircraft-detailing-RMN.html">RMN — Stafford Regional</a>
+        <a href="aircraft-detailing-CJR.html">CJR — Culpeper Regional</a>
+        <a href="aircraft-detailing-GAI.html">GAI — Montgomery County Airpark</a>
+        <a href="aircraft-detailing-CGS.html">CGS — College Park Airport</a>
+        <a href="aircraft-detailing-ANP.html">ANP — Annapolis (Lee)</a>
+        <a href="aircraft-detailing-MTN.html">MTN — Martin State</a>
+        <a href="aircraft-detailing-ESN.html">ESN — Easton/Newnam Field</a>
+        <a href="aircraft-detailing-VKX.html">VKX — Potomac Airfield</a>
+        <a href="aircraft-detailing-W32.html">W32 — Washington Executive/Hyde Field</a>
+        <a href="aircraft-detailing-2W5.html">2W5 — Maryland Airport</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <p>Email: planeandsimple
