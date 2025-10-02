@@ -17,31 +17,24 @@
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Open Sans',sans-serif;background:#fafafa;color:#111;text-align:center;scroll-behavior:smooth}
-
     .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
     /* Header */
-    header{
-      position:fixed;top:0;left:0;right:0;z-index:1000;
-      background:rgba(0,17,38,.9);backdrop-filter:blur(10px);
-      display:flex;align-items:center;justify-content:space-between;
-      padding:12px 20px;
-    }
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(0,17,38,.9);backdrop-filter:blur(10px);
+      display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
     .brandline{font-family:'Cinzel',serif;color:var(--brand-gold);font-weight:700;font-size:1.4rem}
-
-    /* Nav */
     nav{display:flex;align-items:center}
-    nav ul{list-style:none;display:flex;gap:30px}
+    nav ul{list-style:none;display:flex;gap:30px;flex-wrap:wrap}
     nav a{color:#fff;text-decoration:none;font-weight:600;position:relative;padding:6px 0}
-    nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:var(--brand-gold);transform:translateX(-50%);transition:var(--t)}
+    nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:var(--brand-gold);
+      transform:translateX(-50%);transition:var(--t)}
     nav a:hover::after{width:100%}
-    .header-cta{background:var(--brand-gold);color:var(--brand-blue);padding:8px 16px;border-radius:24px;font-weight:700;cursor:pointer;border:none;margin-left:20px}
+    .header-cta{background:var(--brand-gold);color:var(--brand-blue);padding:8px 16px;border-radius:24px;
+      font-weight:700;cursor:pointer;border:none;margin-left:20px}
 
     /* Hamburger */
     .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer}
     .menu-toggle span{width:26px;height:3px;background:#fff;border-radius:2px;transition:var(--t)}
-
-    /* Mobile nav dropdown */
     @media (max-width:768px){
       nav{display:none;flex-direction:column;background:rgba(0,17,38,.95);position:absolute;top:100%;left:0;right:0;padding:20px}
       nav.active{display:flex}
@@ -51,43 +44,56 @@
     }
 
     /* Hero */
-    .hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;background:url('intro.png') center/cover no-repeat fixed;color:#fff}
+    .hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;
+      background:url('intro.png') center/cover no-repeat fixed;color:#fff}
     .hero::before{content:"";position:absolute;inset:0;background:rgba(0,17,38,.45)}
     .hero-inner{position:relative;z-index:2;padding:0 20px}
     h1{font-family:'Cinzel',serif;color:var(--brand-gold);font-size:clamp(2rem,6vw,4rem);margin-bottom:10px}
     .subtitle{font-weight:600;letter-spacing:.3rem;text-transform:uppercase;margin-bottom:20px}
     .cta{background:var(--brand-gold);color:var(--brand-blue);padding:12px 28px;border-radius:30px;font-weight:700;text-decoration:none;display:inline-block}
 
+    /* Make full airplane show on mobile */
+    @media (max-width:768px){
+      .hero{background:url('intro.png') center/contain no-repeat; height:80vh; background-attachment:scroll;}
+    }
+
     /* Sections */
     section{padding:80px 20px}
     .sec-head{font-family:'Cinzel',serif;color:var(--brand-gold);font-size:clamp(1.4rem,3vw,2rem);margin-bottom:20px}
     .gold-line{width:110px;height:2px;background:var(--brand-gold);margin:0 auto 40px}
 
-    /* Cards */
+    /* Services */
     .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
     .card{background:#0d1625;color:#fff;border-radius:12px;overflow:hidden}
     .card img{width:100%;height:180px;object-fit:cover}
     .card h3{margin:10px 0;color:var(--brand-gold)}
 
     /* Packages */
-    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-    .package{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);padding:20px}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .package{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);padding:20px;text-align:left}
     .package h3{font-family:'Cinzel',serif;color:var(--brand-blue)}
     .package h4{color:var(--brand-gold);margin-bottom:10px}
-    .pricing{margin:10px 0;font-weight:700;color:var(--brand-blue)}
+    .package ul{margin:0 0 10px 20px;line-height:1.6;color:#333}
+    .pricing{margin:10px 0;font-weight:700;color:var(--brand-gold);text-align:center}
+    .package .cta{display:block;margin:10px auto 0;text-align:center;background:var(--brand-gold);color:#001126;
+      padding:10px 20px;border-radius:20px;text-decoration:none;font-weight:700}
 
     /* Gallery */
     .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
     .pane{flex:0 0 100%;height:60vh;scroll-snap-align:center;position:relative}
     .pane img{width:100%;height:100%;object-fit:cover}
-    .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;font-family:'Cinzel',serif;background:rgba(0,0,0,.3)}
+    .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+      color:#fff;font-size:2rem;font-family:'Cinzel',serif;background:rgba(0,0,0,.3)}
 
-    /* Airports */
-    .air-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
-    .air-grid a{text-decoration:none;color:var(--brand-blue);font-weight:600}
+    /* Airports - horizontal */
+    .air-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    .air-grid a{text-decoration:none;color:var(--brand-blue);font-weight:600;background:#fff;padding:6px 12px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
 
     /* Footer */
     footer{background:var(--brand-blue);color:#cfd7e3;padding:30px;font-size:0.9rem}
+    form{max-width:500px;margin:0 auto;text-align:left}
+    form input,form textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #ccc}
+    form button{background:var(--brand-gold);color:#001126;border:none;padding:12px 20px;font-weight:700;cursor:pointer;border-radius:20px;width:100%}
   </style>
 </head>
 <body>
@@ -147,11 +153,36 @@
       <h2 class="sec-head">Our Packages</h2>
       <div class="gold-line"></div>
       <div class="packages">
-        <div class="package"><h3>Bronze</h3><h4>Ramp Ready</h4><p class="pricing">From $250+</p></div>
-        <div class="package"><h3>Silver</h3><h4>Executive</h4><p class="pricing">From $550+</p></div>
-        <div class="package"><h3>Gold</h3><h4>Prestige</h4><p class="pricing">From $1,200+</p></div>
-        <div class="package"><h3>Platinum</h3><h4>Signature</h4><p class="pricing">From $2,400+</p></div>
-        <div class="package"><h3>Ultra</h3><h4>Bespoke Fleet</h4><p class="pricing">Custom</p></div>
+        <div class="package">
+          <h3>Bronze</h3><h4>Ramp Ready</h4>
+          <ul><li>Quick Exterior Wash</li><li>Bug & Tar Removal</li><li>Quick Cabin Reset</li></ul>
+          <p class="pricing">From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <div class="package">
+          <h3>Silver</h3><h4>Executive</h4>
+          <ul><li>Full Exterior Wash</li><li>Brightwork Touch-Up</li><li>Cabin Cleaning</li><li>Leather Conditioning</li><li>Lavatory Refresh</li></ul>
+          <p class="pricing">From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <div class="package">
+          <h3>Gold</h3><h4>Prestige</h4>
+          <ul><li>Exterior Polishing & Sealant</li><li>Full Brightwork Polish</li><li>Deep Cabin Clean</li><li>Carpet Extraction</li><li>Lavatory Sterilization</li></ul>
+          <p class="pricing">From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <div class="package">
+          <h3>Platinum</h3><h4>Signature</h4>
+          <ul><li>Everything in Gold</li><li>Ceramic Coating</li><li>Window Polishing</li><li>Cabin Sanitization</li><li>Landing Gear Treatment</li></ul>
+          <p class="pricing">From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
+        <div class="package">
+          <h3>Ultra</h3><h4>Bespoke Fleet</h4>
+          <ul><li>Everything in Platinum</li><li>AOG Ramp Response</li><li>Custom Scenting</li><li>Brightwork Protection Film</li><li>Fleet Membership</li></ul>
+          <p class="pricing">Custom Fleet Programs · $10k–$50k+ annually</p>
+          <a href="#contact" class="cta">Select</a>
+        </div>
       </div>
     </div>
   </section>
@@ -179,9 +210,16 @@
 
   <!-- Contact -->
   <footer id="contact">
-    <p>Email: planeandsimpledetails@gmail.com</p>
+    <h2 class="sec-head">Book Now</h2>
+    <div class="gold-line"></div>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Request"></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+    <p style="margin-top:20px;">Email: planeandsimpledetails@gmail.com</p>
     <p>Phone: (202) 805-3443</p>
-    <p>Service Area: Greater Washington, D.C.</p>
   </footer>
 
   <!-- JS: Toggle nav -->
