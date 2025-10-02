@@ -52,7 +52,7 @@
     /* Hero */
     .hero{
       position:relative;height:100vh;display:flex;align-items:center;justify-content:center;
-      background:url('INTRO 2.PNG') center/cover no-repeat fixed;
+      background:url('intro2.png') center/cover no-repeat fixed;
       opacity:0;animation:heroIn 1.6s ease .2s forwards
     }
     @keyframes heroIn{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
@@ -64,19 +64,16 @@
       width:240px;height:240px;margin:0 auto 24px;position:relative;display:grid;place-items:center;
       opacity:0;transform:translateY(30px);animation:fadeUp 1s ease 1s forwards
     }
-    /* Even, centered radial glow */
     .crest::before{
       content:"";position:absolute;inset:0;border-radius:50%;
       background:radial-gradient(circle, rgba(212,175,55,0.35) 0%, rgba(212,175,55,0) 80%);
       filter:blur(10px);
       z-index:0;animation:pulse 6s ease-in-out infinite
     }
-    /* Balanced inner logo highlights */
     .crest img{
       width:190px;height:190px;border-radius:50%;position:relative;z-index:2;
       box-shadow:0 0 40px rgba(212,175,55,.6), 0 0 80px rgba(212,175,55,.4)
     }
-    /* Symmetrical outer ring (equal arcs every 25%) */
     .ring{
       position:absolute;inset:0;margin:auto;width:240px;height:240px;border-radius:50%;
       border:4px solid transparent;
@@ -171,13 +168,12 @@
     @keyframes fadeIn{to{opacity:1}}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 
-    
     .lead{max-width:900px;margin:0 auto;font-size:1.08rem;line-height:1.9;color:#cfd8e6}
-/* Responsive tweaks */
+
     @media (max-width:768px){
       .nav-wrap{padding:12px 18px}
       nav ul{gap:16px}
-      .header-cta{display:none} /* keep header compact on small screens */
+      .header-cta{display:none}
     }
   </style>
 </head>
@@ -205,7 +201,6 @@
     <div class="hero-inner">
       <div class="crest" aria-label="Illuminated Plane & Simple logo">
         <div class="ring" aria-hidden="true"></div>
-        <!-- Replace Logo.png with your logo asset -->
         <img src="Logo.png" alt="Plane & Simple Logo">
       </div>
       <h1>Plane &amp; Simple</h1>
@@ -214,7 +209,6 @@
     </div>
   </section>
 
-
   <!-- About -->
   <section id="about" class="alt">
     <div class="container">
@@ -222,8 +216,8 @@
       <div class="gold-line"></div>
       <p class="lead">
         Plane &amp; Simple is a luxury aircraft detailing company serving the greater Washington, D.C. region.
-        We deliver concierge‑level exterior and cabin care, brightwork refinement, and protective finishes for
-        private planes to corporate jets. From ramp‑ready turnarounds to bespoke fleet programs, our Bronze through
+        We deliver concierge-level exterior and cabin care, brightwork refinement, and protective finishes for
+        private planes to corporate jets. From ramp-ready turnarounds to bespoke fleet programs, our Bronze through
         Ultra packages are tailored to your mission profile and executed with discretion, precision, and a
         presentation that endures beyond the runway.
       </p>
@@ -235,7 +229,6 @@
     <div class="container">
       <h2 class="sec-head">Bespoke Aircraft Care</h2>
       <div class="gold-line"></div>
-
       <div class="tiers">
         <article class="card">
           <img src="exterior_wash.png" alt="Exterior Wash">
@@ -250,7 +243,6 @@
             </ul>
           </div>
         </article>
-
         <article class="card">
           <img src="cabin_detail.png" alt="Cabin Detail">
           <div class="content">
@@ -264,7 +256,6 @@
             </ul>
           </div>
         </article>
-
         <article class="card">
           <img src="brightwork_polish.png" alt="Brightwork Polish">
           <div class="content">
@@ -287,7 +278,6 @@
     <div class="container">
       <h2 class="sec-head">Our Packages</h2>
       <div class="gold-line"></div>
-
       <div class="packages">
         <div class="package">
           <h3>Bronze</h3><h4>Ramp Ready</h4>
@@ -296,10 +286,9 @@
             <li>Bug &amp; Tar Removal</li>
             <li>Quick Cabin Reset</li>
           </ul>
-		  <p class="pricing"><strong>From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</strong></p>
+          <p class="pricing"><strong>From $250 (SE) · $600 (Light Jet) · $1,200 (Large Jet)</strong></p>
           <a href="#contact" class="cta">Select</a>
         </div>
-
         <div class="package">
           <h3>Silver</h3><h4>Executive</h4>
           <ul>
@@ -309,10 +298,9 @@
             <li>Leather Conditioning</li>
             <li>Lavatory Refresh</li>
           </ul>
-		  <p class="pricing"><strong>From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</strong></p>
+          <p class="pricing"><strong>From $550 (SE) · $1,200 (Light Jet) · $2,200 (Large Jet)</strong></p>
           <a href="#contact" class="cta">Select</a>
         </div>
-
         <div class="package">
           <h3>Gold</h3><h4>Prestige</h4>
           <ul>
@@ -322,10 +310,9 @@
             <li>Carpet Extraction</li>
             <li>Lavatory Sterilization</li>
           </ul>
-		  <p class="pricing"><strong>From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</strong></p>
+          <p class="pricing"><strong>From $1,200 (SE) · $2,800 (Light Jet) · $4,800 (Large Jet)</strong></p>
           <a href="#contact" class="cta">Select</a>
         </div>
-
         <div class="package">
           <h3>Platinum</h3><h4>Signature</h4>
           <ul>
@@ -335,10 +322,9 @@
             <li>Cabin Sanitization</li>
             <li>Landing Gear Treatment</li>
           </ul>
-		  <p class="pricing"><strong>From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</strong></p>
+          <p class="pricing"><strong>From $2,400 (SE) · $6,500 (Light Jet) · $12,000 (Large Jet)</strong></p>
           <a href="#contact" class="cta">Select</a>
         </div>
-
         <div class="package">
           <h3>Ultra</h3><h4>Bespoke Fleet</h4>
           <ul>
@@ -348,7 +334,7 @@
             <li>Brightwork Protection Film</li>
             <li>Fleet Membership</li>
           </ul>
-		  <p class="pricing"><strong>Custom Fleet Programs · $10k–$50k+ annually</strong></p>
+          <p class="pricing"><strong>Custom Fleet Programs · $10k–$50k+ annually</strong></p>
           <a href="#contact" class="cta">Select</a>
         </div>
       </div>
