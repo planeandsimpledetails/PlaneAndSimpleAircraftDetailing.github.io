@@ -40,7 +40,7 @@
     nav ul{display:none;flex-direction:column;gap:18px;background:rgba(0,17,38,.95);position:absolute;top:60px;right:10px;width:220px;padding:20px;border-radius:8px}
     nav ul.active{display:flex}
 
-    /* Hero */
+    /* Hero (mobile default) */
     .hero{
       position:relative;
       min-height:70vh;
@@ -52,7 +52,7 @@
     .hero::before{content:"";position:absolute;inset:0;background:rgba(0,17,38,.45)}
     .hero-inner{position:relative;z-index:2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 10px}
 
-    /* Crest & Logo */
+    /* Crest & Logo (mobile) */
     .crest{width:120px;height:120px;margin:0 auto 12px;position:relative;display:grid;place-items:center}
     .crest img{width:90px;height:90px;border-radius:50%;z-index:2;box-shadow:0 0 25px rgba(212,175,55,.6), 0 0 50px rgba(212,175,55,.4)}
     .ring{position:absolute;inset:0;width:120px;height:120px;border-radius:50%;background:conic-gradient(from 0deg,var(--brand-gold) 0%,transparent 25%,var(--brand-gold) 50%,transparent 75%,var(--brand-gold) 100%);animation:rotate 18s linear infinite}
@@ -63,7 +63,7 @@
     .cta{background:var(--brand-gold);color:var(--brand-blue);padding:8px 20px;border-radius:30px;font-weight:700;text-decoration:none;margin-bottom:10px}
     .cta:hover{background:#b48b25;color:#fff}
 
-    /* About – pulled up closer */
+    /* About (mobile default compact) */
     #about{padding:30px 0 60px;background:linear-gradient(180deg,#031020,var(--brand-blue));color:#fff}
     .sec-head{font-family:'Cinzel',serif;font-weight:700;font-size:1.3rem;color:var(--brand-gold);margin-bottom:10px}
     .gold-line{width:80px;height:2px;margin:10px auto 20px;background:linear-gradient(90deg,transparent,var(--brand-gold),transparent)}
@@ -95,7 +95,27 @@
     .air-grid a:hover{background:var(--brand-gold);color:#fff}
 
     footer{background:var(--brand-blue);color:#cfd7e3;padding:20px;font-size:.9rem}
+
     @keyframes fadeIn{to{opacity:1}}
+
+    /* DESKTOP STYLES */
+    @media (min-width: 769px){
+      .hero{
+        min-height:100vh;
+        background:url('intro.png') center center/cover no-repeat;
+      }
+      .crest{width:240px;height:240px;margin:0 auto 24px;}
+      .crest img{width:190px;height:190px;}
+      .ring{width:240px;height:240px;}
+      h1{font-size:clamp(2.6rem,6vw,4.6rem);}
+      .subtitle{font-size:1.1rem;letter-spacing:.4rem;}
+      .cta{padding:14px 34px;font-size:1rem;margin-top:10px}
+      section{padding:100px 0;}
+      #about{padding-top:60px;}
+      .tiers{grid-template-columns:repeat(3,1fr);}
+      .packages{grid-template-columns:repeat(3,1fr);}
+      .air-grid{grid-template-columns:repeat(3,1fr);}
+    }
   </style>
 </head>
 <body>
