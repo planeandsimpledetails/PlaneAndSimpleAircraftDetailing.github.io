@@ -4,14 +4,14 @@
   "name": "Plane & Simple Aircraft Detailing",
   "url": "https://planeandsimpledetails.github.io/",
   "logo": "https://planeandsimpledetails.github.io/Logo.png",
-  "image": "https://planeandsimpledetails.github.io/Logo.png",
-  "telephone": "+1-202-805-3443",
+  "image": "Logo.webp",
+  "telephone": "+12028053443",
   "email": "planeandsimpledetails@gmail.com",
   "priceRange": "$$",
   "description": "Luxury aircraft detailing across DC, Maryland, and Virginia. From GA to corporate jets, helicopters, turboprops, experimental, vintage, warbirds. Services include brightwork polishing, ceramic coatings, interior and exterior detailing, AOG ramp response, fleet programs, and aircraft detailing near me.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Service Area Only",
+    "streetAddress": "Washington DC Metro Area",
     "addressLocality": "Washington",
     "addressRegion": "DC",
     "postalCode": "20001",
@@ -19,310 +19,13 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 38.89511,
-    "longitude": -77.03637
+    "latitude": 38.9072,
+    "longitude": -77.0369
   },
   "areaServed": [
-    {
-      "@type": "Place",
-      "name": "Washington Dulles International (IAD)"
-    },
-    {
-      "@type": "Place",
-      "name": "Ronald Reagan Washington National (DCA)"
-    },
-    {
-      "@type": "Place",
-      "name": "Baltimore/Washington International (BWI)"
-    },
-    {
-      "@type": "Place",
-      "name": "Manassas Regional (HEF)"
-    },
-    {
-      "@type": "Place",
-      "name": "Leesburg Executive (JYO)"
-    },
-    {
-      "@type": "Place",
-      "name": "Frederick Municipal (FDK)"
-    },
-    {
-      "@type": "Place",
-      "name": "Tipton Airport (FME)"
-    },
-    {
-      "@type": "Place",
-      "name": "Montgomery County Airpark (GAI)"
-    },
-    {
-      "@type": "Place",
-      "name": "College Park Airport (CGS)"
-    },
-    {
-      "@type": "Place",
-      "name": "Annapolis Lee Airport (ANP)"
-    },
-    {
-      "@type": "Place",
-      "name": "Stafford Regional (RMN)"
-    },
-    {
-      "@type": "Place",
-      "name": "Culpeper Regional (CJR)"
-    },
-    {
-      "@type": "Place",
-      "name": "Bay Bridge Airport (W29)"
-    },
-    {
-      "@type": "Place",
-      "name": "Maryland Airport (2W5)"
-    },
-    {
-      "@type": "Place",
-      "name": "Davis Airport (W50)"
-    },
-    {
-      "@type": "Place",
-      "name": "Freeway Airport (W00)"
-    },
-    {
-      "@type": "Place",
-      "name": "Cambridge\u2013Dorchester (CGE)"
-    },
-    {
-      "@type": "Place",
-      "name": "Martin State Airport (MTN)"
-    },
-    {
-      "@type": "Place",
-      "name": "Easton Airport (ESN)"
-    },
-    {
-      "@type": "Place",
-      "name": "Potomac Airfield (VKX)"
-    },
-    {
-      "@type": "Place",
-      "name": "Gaithersburg Airpark (W32)"
-    },
-    {
-      "@type": "Place",
-      "name": "Hagerstown Regional (HGR)"
-    },
-    {
-      "@type": "Place",
-      "name": "Carroll County Regional (DMW)"
-    },
-    {
-      "@type": "Place",
-      "name": "Georgetown Sussex County (GED)"
-    },
-    {
-      "@type": "Place",
-      "name": "Winchester Regional (OKV)"
-    },
-    {
-      "@type": "Place",
-      "name": "Shannon Airport (EZF)"
-    },
-    {
-      "@type": "Place",
-      "name": "Chesterfield County Airport (FCI)"
-    },
-    {
-      "@type": "Place",
-      "name": "Washington DC"
-    },
-    {
-      "@type": "Place",
-      "name": "Capitol Hill"
-    },
-    {
-      "@type": "Place",
-      "name": "Georgetown"
-    },
-    {
-      "@type": "Place",
-      "name": "Dupont Circle"
-    },
-    {
-      "@type": "Place",
-      "name": "Adams Morgan"
-    },
-    {
-      "@type": "Place",
-      "name": "Foggy Bottom"
-    },
-    {
-      "@type": "Place",
-      "name": "Arlington VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Alexandria VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Fairfax VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Falls Church VA"
-    },
-    {
-      "@type": "Place",
-      "name": "McLean VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Tysons VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Reston VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Herndon VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Vienna VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Springfield VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Ashburn VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Sterling VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Chantilly VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Centreville VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Manassas VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Woodbridge VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Dale City VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Stafford VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Fredericksburg VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Dumfries VA"
-    },
-    {
-      "@type": "Place",
-      "name": "Bethesda MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Rockville MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Gaithersburg MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Germantown MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Silver Spring MD"
-    },
-    {
-      "@type": "Place",
-      "name": "College Park MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Greenbelt MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Laurel MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Bowie MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Hyattsville MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Upper Marlboro MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Waldorf MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Clinton MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Oxon Hill MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Temple Hills MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Fort Washington MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Annapolis MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Crofton MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Glen Burnie MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Columbia MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Ellicott City MD"
-    },
-    {
-      "@type": "Place",
-      "name": "Frederick MD"
-    }
+    "Washington DC",
+    "Maryland",
+    "Virginia"
   ],
   "makesOffer": [
     {
@@ -457,5 +160,31 @@
       "serviceType": "Corporate Jet Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
       "areaServed": "Washington DC Metro Area"
     }
+  ],
+  "serviceType": [
+    "Aircraft Detailing",
+    "Jet Cleaning",
+    "Waxing",
+    "Polishing",
+    "Brightwork",
+    "Ceramic Coating",
+    "Interior Detailing",
+    "Exterior Wash",
+    "Fleet Programs",
+    "FAA Compliant Cleaning"
+  ],
+  "keywords": [
+    "aircraft detailing near me",
+    "private jet cleaning",
+    "brightwork polishing",
+    "aircraft waxing",
+    "aircraft interior cleaning",
+    "aircraft ceramic coating",
+    "aircraft fleet programs",
+    "FAA compliant aircraft cleaning"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/planeandsimpledetails",
+    "https://www.facebook.com/planeandsimpledetails"
   ]
 }
