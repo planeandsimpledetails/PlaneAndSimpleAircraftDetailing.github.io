@@ -3,9 +3,12 @@
   "@type": "LocalBusiness",
   "name": "Plane & Simple Aircraft Detailing",
   "url": "https://planeandsimpledetails.github.io/",
-  "image": "Logo.png",
+  "logo": "https://planeandsimpledetails.github.io/Logo.png",
+  "image": "Logo.webp",
   "telephone": "+12028053443",
   "email": "planeandsimpledetails@gmail.com",
+  "priceRange": "$$",
+  "description": "Luxury aircraft detailing across DC, Maryland, and Virginia. From GA to corporate jets, helicopters, turboprops, experimental, vintage, warbirds. Services include brightwork polishing, ceramic coatings, interior and exterior detailing, AOG ramp response, fleet programs, and aircraft detailing near me.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Washington",
@@ -17,12 +20,144 @@
     "latitude": 38.9072,
     "longitude": -77.0369
   },
-  "priceRange": "$$",
-  "openingHours": "Mo-Su 08:00-20:00",
   "areaServed": [
     "Washington DC",
     "Maryland",
     "Virginia"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Service",
+      "name": "Brightwork Polishing",
+      "serviceType": "Brightwork Polishing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Ceramic Coating",
+      "serviceType": "Ceramic Coating near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Interior Aircraft Detailing",
+      "serviceType": "Interior Aircraft Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Exterior Aircraft Wash",
+      "serviceType": "Exterior Aircraft Wash near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Full Aircraft Detailing",
+      "serviceType": "Full Aircraft Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Dry Wash",
+      "serviceType": "Dry Wash near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Deice Boot Restoration",
+      "serviceType": "Deice Boot Restoration near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Paint Protection Film",
+      "serviceType": "Paint Protection Film near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Wax And Sealant",
+      "serviceType": "Wax And Sealant near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Leather Cleaning",
+      "serviceType": "Leather Cleaning near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Carpet Cleaning",
+      "serviceType": "Carpet Cleaning near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Lavatory Sanitization",
+      "serviceType": "Lavatory Sanitization near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Cabin Disinfection",
+      "serviceType": "Cabin Disinfection near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Ozone Treatment",
+      "serviceType": "Ozone Treatment near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Hangar Rash Touchup",
+      "serviceType": "Hangar Rash Touchup near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Aog Ramp Wash",
+      "serviceType": "Aog Ramp Wash near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Fleet Programs",
+      "serviceType": "Fleet Programs near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Charter Aircraft Detailing",
+      "serviceType": "Charter Aircraft Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Faa Compliant Cleaning",
+      "serviceType": "Faa Compliant Cleaning near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Aircraft Detailing",
+      "serviceType": "Aircraft Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Jet Cleaning",
+      "serviceType": "Jet Cleaning near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Corporate Jet Detailing",
+      "serviceType": "Corporate Jet Detailing near me and in the Washington DC Metro Area. Available for GA, corporate jets, helicopters, turboprops, experimental and warbirds.",
+      "areaServed": "Washington DC Metro Area"
+    }
   ],
   "serviceType": [
     "Aircraft Detailing",
@@ -50,8 +185,7 @@
     "aircraft detailing Maryland"
   ],
   "sameAs": [
-    "https://www.instagram.com/YOUR_USERNAME",
-    "https://www.facebook.com/YOUR_USERNAME",
-    "https://g.page/r/YOUR_GOOGLE_BUSINESS_ID"
+    "https://www.instagram.com/planeandsimpledetails",
+    "https://www.facebook.com/planeandsimpledetails"
   ]
 }
