@@ -147,6 +147,64 @@
   padding-top: 0;
 }
 
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .cta-buttons a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 14px;
+  }
+  .comparison-table {
+    overflow-x: auto;
+    margin: 0 10px;
+  }
+  .comparison-table table {
+    min-width: 600px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* Sticky Book Now Button (Mobile Only) */
+@media (max-width: 768px) {
+  .sticky-book-now {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: #001126;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    animation: bounce 2s infinite;
+  }
+  .sticky-book-now:hover {
+    background: #fff;
+    color: #001126;
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+  40% {transform: translateX(-50%) translateY(-6px);}
+  60% {transform: translateX(-50%) translateY(-3px);}
+}
+
 </style>
 
 <style>
@@ -160,6 +218,64 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   border: 1px solid #D4AF37;
 }
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .cta-buttons a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 14px;
+  }
+  .comparison-table {
+    overflow-x: auto;
+    margin: 0 10px;
+  }
+  .comparison-table table {
+    min-width: 600px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* Sticky Book Now Button (Mobile Only) */
+@media (max-width: 768px) {
+  .sticky-book-now {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: #001126;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    animation: bounce 2s infinite;
+  }
+  .sticky-book-now:hover {
+    background: #fff;
+    color: #001126;
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+  40% {transform: translateX(-50%) translateY(-6px);}
+  60% {transform: translateX(-50%) translateY(-3px);}
+}
+
 </style>
 
 
@@ -173,6 +289,64 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .cta-buttons a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 14px;
+  }
+  .comparison-table {
+    overflow-x: auto;
+    margin: 0 10px;
+  }
+  .comparison-table table {
+    min-width: 600px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* Sticky Book Now Button (Mobile Only) */
+@media (max-width: 768px) {
+  .sticky-book-now {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: #001126;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    animation: bounce 2s infinite;
+  }
+  .sticky-book-now:hover {
+    background: #fff;
+    color: #001126;
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+  40% {transform: translateX(-50%) translateY(-6px);}
+  60% {transform: translateX(-50%) translateY(-3px);}
+}
+
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -275,9 +449,9 @@ Concierge-level exterior & cabin care for jets, turboprops, and general aviation
       <h2 class="sec-head">Premium Aircraft Care Services</h2>
       <div class="gold-line"></div>
       <div class="tiers">
-        <article class="card"><img src="exterior_wash.png" alt="Aircraft Exterior Wash Service"><div class="content"><h3>Exterior</h3><ul><li>Dry or Wet Wash</li><li>Brightwork Polish</li><li>Paint Sealant</li><li>De-Icing Residue Removal</li><li>Landing Gear Treatment</li></ul></div></article>
-        <article class="card"><img src="cabin_detail.png" alt="Aircraft Detailing Close-up" alt="Aircraft Cabin Detailing Service"><div class="content"><h3>Interior</h3><ul><li>Cabin, Cockpit &amp; Galley Cleaning</li><li>Leather Conditioning</li><li>Carpet Extraction</li><li>Odor Elimination</li><li>Lavatory Sterilization</li></ul></div></article>
-        <article class="card"><img src="brightwork_polish.png" alt="Aircraft Brightwork Polishing"><div class="content"><h3>Detail</h3><ul><li>Ceramic Coating</li><li>Post-Flight Ramp Turn</li><li>Window Polishing</li><li>Hangar Cleaning</li><li>Fleet Membership Plans</li></ul></div></article>
+        <article class="card"><img src="exterior_wash.png"><div class="content"><h3>Exterior</h3><ul><li>Dry or Wet Wash</li><li>Brightwork Polish</li><li>Paint Sealant</li><li>De-Icing Residue Removal</li><li>Landing Gear Treatment</li></ul></div></article>
+        <article class="card"><img src="cabin_detail.png"><div class="content"><h3>Interior</h3><ul><li>Cabin, Cockpit &amp; Galley Cleaning</li><li>Leather Conditioning</li><li>Carpet Extraction</li><li>Odor Elimination</li><li>Lavatory Sterilization</li></ul></div></article>
+        <article class="card"><img src="brightwork_polish.png"><div class="content"><h3>Detail</h3><ul><li>Ceramic Coating</li><li>Post-Flight Ramp Turn</li><li>Window Polishing</li><li>Hangar Cleaning</li><li>Fleet Membership Plans</li></ul></div></article>
       </div>
     </div>
   </section>
@@ -300,7 +474,7 @@ Concierge-level exterior & cabin care for jets, turboprops, and general aviation
   <p class="pricing"><strong>Light Jet: $1200+</strong></p>
   <p class="pricing"><strong>Large Jet: $2200+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Gold</h3><div style="margin-top:4px;font-size:0.9rem;font-weight:600;color:#001126;background:#D4AF37;display:inline-block;padding:2px 8px;border-radius:4px;">Most Popular</div><p style='font-weight:600;color:#D4AF37;'>Starting From $1200</p></h3><h4>Prestige</h4><ul><li>Polish &amp; Sealant</li><li>Brightwork Polish</li><li>Cabin Deep Clean</li><li>Carpet Extraction</li><li>Lav Sterilization</li></ul><div class="pricing-block">
+        <div class="package"><h3>Gold</h3><div style="margin-top:4px;font-size:0.9rem;font-weight:600;color:#001126;background:#D4AF37;display:inline-block;padding:2px 8px;border-radius:4px;">Most Popular</div><p style='font-weight:600;color:#D4AF37;'>Starting From $1200</p><span style="background:#D4AF37;color:#001126;padding:2px 6px;border-radius:4px;font-size:0.8rem;">Most Popular</span></h3><h4>Prestige</h4><ul><li>Polish &amp; Sealant</li><li>Brightwork Polish</li><li>Cabin Deep Clean</li><li>Carpet Extraction</li><li>Lav Sterilization</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $1200+</strong></p>
   <p class="pricing"><strong>Multi Engine: $1600+</strong></p>
   <p class="pricing"><strong>Light Jet: $2800+</strong></p>
@@ -411,9 +585,9 @@ Concierge-level exterior & cabin care for jets, turboprops, and general aviation
     <div class="gold-line"></div>
     <div style="position:relative;max-width:700px;margin:20px auto;">
       <div style="position:relative;overflow:hidden;">
-        <img src="images/before.jpg" alt="Aircraft Before Detailing" style="width:100%;display:block;" alt="Before Detailing">
+        <img src="images/before.jpg" style="width:100%;display:block;" alt="Before Detailing">
         <div style="position:absolute;top:0;left:0;width:50%;overflow:hidden;height:100%;">
-          <img src="images/after.jpg" alt="Aircraft After Detailing" style="width:100%;display:block;" alt="After Detailing">
+          <img src="images/after.jpg" style="width:100%;display:block;" alt="After Detailing">
         </div>
       </div>
       <p style="margin-top:12px;font-size:0.9rem;color:#555;">Slide to compare before and after our detailing services.</p>
@@ -453,9 +627,9 @@ Concierge-level exterior & cabin care for jets, turboprops, and general aviation
   <!-- Gallery -->
   <section id="gallery" class="fade-in" class="gallery">
     <div class="pane"><img src="percision.png"><div class="word">Precision</div></div>
-    <div class="pane"><img src="reflection.png" alt="Aircraft Reflection Finish"><div class="word">Reflection</div></div>
-    <div class="pane"><img src="legacy.png" alt="Aircraft Legacy Finish"><div class="word">Legacy</div></div>
-    <div class="pane"><img src="detail.png" alt="Aircraft Detailing Close-up"><div class="word">Detail</div></div>
+    <div class="pane"><img src="reflection.png"><div class="word">Reflection</div></div>
+    <div class="pane"><img src="legacy.png"><div class="word">Legacy</div></div>
+    <div class="pane"><img src="detail.png"><div class="word">Detail</div></div>
   </section>
 
  <!-- Airports -->
@@ -581,5 +755,6 @@ Concierge-level exterior & cabin care for jets, turboprops, and general aviation
     },{threshold:0.2});
     document.querySelectorAll('.card,.package,.sec-head,.air-grid a').forEach(el=>observer.observe(el));
   </script>
+<a href="#quick-quote" class="sticky-book-now">Book Now</a>
 </body>
 </html>
