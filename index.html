@@ -162,6 +162,35 @@
 }
 </style>
 
+
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  faders.forEach(fader => {
+    observer.observe(fader);
+  });
+});
+</script>
+
 </head>
 <body>
   <!-- Header -->
@@ -252,7 +281,7 @@ Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
   </section>
 
   <!-- Packages -->
-  <section id="packages">
+  <section id="packages" class="fade-in">
     <div class="container">
       <h2 class="sec-head">Our Packages</h2>
       <div class="gold-line"></div>
@@ -269,7 +298,7 @@ Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
   <p class="pricing"><strong>Light Jet: $1200+</strong></p>
   <p class="pricing"><strong>Large Jet: $2200+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Gold</h3><div style="margin-top:4px;font-size:0.9rem;font-weight:600;color:#001126;background:#D4AF37;display:inline-block;padding:2px 8px;border-radius:4px;">Most Popular</div><p style='font-weight:600;color:#D4AF37;'>Starting From $1200</p></span></h3><h4>Prestige</h4><ul><li>Polish &amp; Sealant</li><li>Brightwork Polish</li><li>Cabin Deep Clean</li><li>Carpet Extraction</li><li>Lav Sterilization</li></ul><div class="pricing-block">
+        <div class="package"><h3>Gold</h3><div style="margin-top:4px;font-size:0.9rem;font-weight:600;color:#001126;background:#D4AF37;display:inline-block;padding:2px 8px;border-radius:4px;">Most Popular</div><p style='font-weight:600;color:#D4AF37;'>Starting From $1200</p><span style="background:#D4AF37;color:#001126;padding:2px 6px;border-radius:4px;font-size:0.8rem;">Most Popular</span></h3><h4>Prestige</h4><ul><li>Polish &amp; Sealant</li><li>Brightwork Polish</li><li>Cabin Deep Clean</li><li>Carpet Extraction</li><li>Lav Sterilization</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $1200+</strong></p>
   <p class="pricing"><strong>Multi Engine: $1600+</strong></p>
   <p class="pricing"><strong>Light Jet: $2800+</strong></p>
@@ -371,8 +400,55 @@ Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
 </section>
 
 
+
+<!-- Before/After Slider -->
+<section id="before-after" class="alt">
+  <div class="container">
+    <h2 class="sec-head">See the Difference</h2>
+    <div class="gold-line"></div>
+    <div style="position:relative;max-width:700px;margin:20px auto;">
+      <div style="position:relative;overflow:hidden;">
+        <img src="images/before.jpg" style="width:100%;display:block;" alt="Before Detailing">
+        <div style="position:absolute;top:0;left:0;width:50%;overflow:hidden;height:100%;">
+          <img src="images/after.jpg" style="width:100%;display:block;" alt="After Detailing">
+        </div>
+      </div>
+      <p style="margin-top:12px;font-size:0.9rem;color:#555;">Slide to compare before and after our detailing services.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Trust Badges -->
+<section id="trust">
+  <div class="container" style="text-align:center;margin:40px auto;">
+    <h2 class="sec-head">Trusted & Certified</h2>
+    <div class="gold-line"></div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:30px;margin-top:20px;">
+      <div style="flex:1;min-width:150px;max-width:200px;">
+        <img src="images/insured.png" alt="Fully Insured" style="max-width:100px;margin-bottom:10px;">
+        <p>Fully Insured</p>
+      </div>
+      <div style="flex:1;min-width:150px;max-width:200px;">
+        <img src="images/faa.png" alt="FAA Compliant" style="max-width:100px;margin-bottom:10px;">
+        <p>FAA Compliant Standards</p>
+      </div>
+      <div style="flex:1;min-width:150px;max-width:200px;">
+        <img src="images/dmv.png" alt="Serving DC MD VA" style="max-width:100px;margin-bottom:10px;">
+        <p>Serving DC · Maryland · Virginia</p>
+      </div>
+      <div style="flex:1;min-width:150px;max-width:200px;">
+        <img src="images/payment.png" alt="Payment Methods" style="max-width:100px;margin-bottom:10px;">
+        <p>Amex · Visa · Wire Transfer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Gallery -->
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="fade-in" class="gallery">
     <div class="pane"><img src="percision.png"><div class="word">Precision</div></div>
     <div class="pane"><img src="reflection.png"><div class="word">Reflection</div></div>
     <div class="pane"><img src="legacy.png"><div class="word">Legacy</div></div>
@@ -428,7 +504,7 @@ Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
 
 
   <!-- Testimonials -->
-  <section id="testimonials">
+  <section id="testimonials" class="fade-in">
     <div class="container">
       <h2 class="sec-head">What Our Clients Say</h2>
       <div class="gold-line"></div>
@@ -446,8 +522,23 @@ Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
   </section>
 
 
+  
+<!-- Airports Map -->
+<section id="map">
+  <div class="container" style="text-align:center;margin:40px auto;">
+    <h2 class="sec-head">Service Area</h2>
+    <div class="gold-line"></div>
+    <iframe 
+      src="https://www.google.com/maps/d/embed?mid=1Hz4uGqG1O5zGcG_example_map" 
+      width="100%" height="480" style="border:0;margin-top:20px;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p style="margin-top:10px;font-size:0.9rem;color:#555;">50 NM radius from Washington, DC covering all major airports.</p>
+  </div>
+</section>
+
+
   <!-- FAQ -->
-  <section id="faq" class="alt">
+  <section id="faq" class="fade-in" class="alt">
     <div class="container">
       <h2 class="sec-head">Frequently Asked Questions</h2>
       <div class="gold-line"></div>
