@@ -1,111 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/thankyou.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-IAD.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-IAD.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-DCA.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-DCA.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-BWI.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-BWI.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-HEF.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-HEF.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-JYO.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-JYO.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-FME.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-FDK.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-FDK.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-FME.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-GAI.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-GAI.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-CGS.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-CGS.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-ANP.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-ANP.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-CJR.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-RMN.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-RMN.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-CJR.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-CGE.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-W29.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-2W5.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-2W5.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-W00.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-W50.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-W50.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-W00.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://<yourusername>.github.io/<your-repo>/aircraft-detailing-W29.html</loc>
-    <lastmod>2025-10-03T03:03:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-CGE.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-MTN.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-ESN.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-VKX.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-W32.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-HGR.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-DMW.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-GED.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-OKV.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-EZF.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://planeandsimpledetails.github.io/aircraft-detailing-FCI.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

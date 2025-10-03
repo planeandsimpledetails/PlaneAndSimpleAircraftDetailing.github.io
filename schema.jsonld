@@ -1,0 +1,165 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Plane & Simple Aircraft Detailing",
+  "image": "https://planeandsimpledetails.github.io/Logo.png",
+  "@id": "https://planeandsimpledetails.github.io/",
+  "url": "https://planeandsimpledetails.github.io/",
+  "telephone": "+1-202-805-3443",
+  "email": "planeandsimpledetails@gmail.com",
+  "priceRange": "$$",
+  "description": "Luxury aircraft detailing services in Washington, DC, Maryland, and Virginia. Serving general aviation to corporate jets, including turboprops, helicopters, gliders, and warbirds.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Washington",
+    "addressRegion": "DC",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.89511,
+    "longitude": -77.03637
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Washington Dulles International (IAD)"
+    },
+    {
+      "@type": "Place",
+      "name": "Ronald Reagan Washington National (DCA)"
+    },
+    {
+      "@type": "Place",
+      "name": "Baltimore/Washington International (BWI)"
+    },
+    {
+      "@type": "Place",
+      "name": "Manassas Regional (HEF)"
+    },
+    {
+      "@type": "Place",
+      "name": "Leesburg Executive (JYO)"
+    },
+    {
+      "@type": "Place",
+      "name": "Frederick Municipal (FDK)"
+    },
+    {
+      "@type": "Place",
+      "name": "Tipton Airport (FME)"
+    },
+    {
+      "@type": "Place",
+      "name": "Montgomery County Airpark (GAI)"
+    },
+    {
+      "@type": "Place",
+      "name": "College Park Airport (CGS)"
+    },
+    {
+      "@type": "Place",
+      "name": "Annapolis Lee Airport (ANP)"
+    },
+    {
+      "@type": "Place",
+      "name": "Stafford Regional (RMN)"
+    },
+    {
+      "@type": "Place",
+      "name": "Culpeper Regional (CJR)"
+    },
+    {
+      "@type": "Place",
+      "name": "Bay Bridge Airport (W29)"
+    },
+    {
+      "@type": "Place",
+      "name": "Maryland Airport (2W5)"
+    },
+    {
+      "@type": "Place",
+      "name": "Davis Airport (W50)"
+    },
+    {
+      "@type": "Place",
+      "name": "Freeway Airport (W00)"
+    },
+    {
+      "@type": "Place",
+      "name": "Cambridge\u2013Dorchester (CGE)"
+    },
+    {
+      "@type": "Place",
+      "name": "Martin State Airport (MTN)"
+    },
+    {
+      "@type": "Place",
+      "name": "Easton Airport (ESN)"
+    },
+    {
+      "@type": "Place",
+      "name": "Potomac Airfield (VKX)"
+    },
+    {
+      "@type": "Place",
+      "name": "Gaithersburg Airpark (W32)"
+    },
+    {
+      "@type": "Place",
+      "name": "Hagerstown Regional (HGR)"
+    },
+    {
+      "@type": "Place",
+      "name": "Carroll County Regional (DMW)"
+    },
+    {
+      "@type": "Place",
+      "name": "Georgetown Sussex County (GED)"
+    },
+    {
+      "@type": "Place",
+      "name": "Winchester Regional (OKV)"
+    },
+    {
+      "@type": "Place",
+      "name": "Shannon Airport (EZF)"
+    },
+    {
+      "@type": "Place",
+      "name": "Chesterfield County Airport (FCI)"
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Service",
+      "name": "General Aviation Aircraft Detailing",
+      "serviceType": "Exterior and interior detailing for Cessna, Piper, Cirrus, Beechcraft, Mooney, Diamond.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Corporate Jet Detailing",
+      "serviceType": "Luxury detailing for Gulfstream, Bombardier Challenger/Global, Dassault Falcon, Embraer Legacy/Phenom, Cessna Citation, Boeing BBJ, Airbus ACJ.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Turboprop Aircraft Detailing",
+      "serviceType": "Detailing for King Air, Pilatus PC-12, TBM, Dornier, Mitsubishi MU-2.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Helicopter & Rotorcraft Detailing",
+      "serviceType": "Exterior and cabin cleaning for Bell, Sikorsky, Airbus Helicopters, Robinson, Leonardo.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Fleet & AOG Response Programs",
+      "serviceType": "Custom fleet maintenance programs, on-demand AOG (Aircraft on Ground) ramp response, corporate fleet memberships.",
+      "areaServed": "Washington DC Metro Area"
+    }
+  ]
+}

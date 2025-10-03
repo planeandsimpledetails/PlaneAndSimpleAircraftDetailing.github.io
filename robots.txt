@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://<yourusername>.github.io/<your-repo>/sitemap.xml
+Sitemap: https://planeandsimpledetails.github.io/sitemap.xml
