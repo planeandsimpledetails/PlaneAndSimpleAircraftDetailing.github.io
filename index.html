@@ -148,6 +148,20 @@
 }
 
 </style>
+
+<style>
+.package {
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+.package:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border: 1px solid #D4AF37;
+}
+</style>
+
 </head>
 <body>
   <!-- Header -->
@@ -183,7 +197,16 @@
     <div class="hero-inner">
       <div class="crest"><div class="ring"></div><img src="Logo.png" alt="Plane & Simple Logo"></div>
       <h1>Plane &amp; Simple</h1>
-      <div class="subtitle">Aircraft Detailing</div>
+      
+<div class="subtitle">Aircraft Detailing</div>
+<p style="max-width:700px;margin-top:12px;font-size:1.2rem;font-weight:600;">
+Luxury Aircraft Detailing — On-site at any DC, Maryland, or Virginia Airport.
+</p>
+<div style="margin-top:20px;">
+  <a href="#packages" class="cta" style="margin-right:10px;">View Packages</a>
+  <a href="#quick-quote" class="cta" style="background:#fff;color:#001126;border:2px solid #D4AF37;">Get a Quote</a>
+</div>
+
       <p style="max-width:700px;margin-top:12px;font-size:1.2rem;font-weight:600;">Concierge-level exterior & cabin care for jets, turboprops, and general aviation — delivered at your airport.</p>
       <a href="#services" class="cta">Explore Services</a>
     </div>
@@ -194,7 +217,7 @@
     <div class="container">
       <h2 class="sec-head">About Plane &amp; Simple</h2>
       <div class="gold-line"></div>
-      <p>Plane & Simple provides luxury aircraft detailing across Washington DC, and greater surrounding areas.
+      <p>Plane & Simple provides luxury aircraft detailing across Washington DC, Maryland, and Virginia.
         We deliver concierge‑level exterior and cabin care, brightwork refinement, and protective finishes for
         general aviation planes to corporate jets. From ramp‑ready turnarounds to fleet programs, our Bronze through
         Ultra packages are tailored to your mission profile and executed with discretion, precision, and a
@@ -234,37 +257,119 @@
       <h2 class="sec-head">Our Packages</h2>
       <div class="gold-line"></div>
       <div class="packages">
-        <div class="package"><h3>Bronze</h3><h4>Ramp Ready</h4><ul><li>Quick Exterior Wash</li><li>Bug &amp; Tar Removal</li><li>Quick Cabin Reset</li></ul><div class="pricing-block">
+        <div class="package"><h3>Bronze</h3><p style='font-weight:600;color:#D4AF37;'>Starting From $250</p><h4>Ramp Ready</h4><ul><li>Exterior Wash</li><li>Bug &amp; Tar Removal</li><li>Cabin Reset</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $250+</strong></p>
   <p class="pricing"><strong>Multi Engine: $400+</strong></p>
   <p class="pricing"><strong>Light Jet: $600+</strong></p>
   <p class="pricing"><strong>Large Jet: $1200+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Silver</h3><h4>Executive</h4><ul><li>Full Exterior Wash</li><li>Brightwork Touch-Up</li><li>Cabin Cleaning</li><li>Leather Conditioning</li><li>Lavatory Refresh</li></ul><div class="pricing-block">
+        <div class="package"><h3>Silver</h3><p style='font-weight:600;color:#D4AF37;'>Starting From $550</p><h4>Executive</h4><ul><li>Exterior Wash</li><li>Brightwork Touch-Up</li><li>Cabin Clean</li><li>Leather Care</li><li>Lav Refresh</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $550+</strong></p>
   <p class="pricing"><strong>Multi Engine: $800+</strong></p>
   <p class="pricing"><strong>Light Jet: $1200+</strong></p>
   <p class="pricing"><strong>Large Jet: $2200+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Gold</h3><h4>Prestige</h4><ul><li>Exterior Polishing &amp; Sealant</li><li>Full Brightwork Polish</li><li>Deep Cabin Clean</li><li>Carpet Extraction</li><li>Lavatory Sterilization</li></ul><div class="pricing-block">
+        <div class="package"><h3>Gold</h3><div style="margin-top:4px;font-size:0.9rem;font-weight:600;color:#001126;background:#D4AF37;display:inline-block;padding:2px 8px;border-radius:4px;">Most Popular</div><p style='font-weight:600;color:#D4AF37;'>Starting From $1200</p><span style="background:#D4AF37;color:#001126;padding:2px 6px;border-radius:4px;font-size:0.8rem;">Most Popular</span></h3><h4>Prestige</h4><ul><li>Polish &amp; Sealant</li><li>Brightwork Polish</li><li>Cabin Deep Clean</li><li>Carpet Extraction</li><li>Lav Sterilization</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $1200+</strong></p>
   <p class="pricing"><strong>Multi Engine: $1600+</strong></p>
   <p class="pricing"><strong>Light Jet: $2800+</strong></p>
   <p class="pricing"><strong>Large Jet: $4800+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Platinum</h3><h4>Signature</h4><ul><li>Everything in Gold</li><li>Ceramic Coating</li><li>Window Polishing</li><li>Cabin Sanitization</li><li>Landing Gear Treatment</li></ul><div class="pricing-block">
+        <div class="package"><h3>Platinum</h3><p style='font-weight:600;color:#D4AF37;'>Starting From $2400</p><h4>Signature</h4><ul><li>Everything in Gold</li><li>Ceramic Coating</li><li>Window Polish</li><li>Cabin Sanitization</li><li>Gear Treatment</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Single Engine: $2400+</strong></p>
   <p class="pricing"><strong>Multi Engine: $3200+</strong></p>
   <p class="pricing"><strong>Light Jet: $6500+</strong></p>
   <p class="pricing"><strong>Large Jet: $12,000+</strong></p>
 </div></strong></div>
-        <div class="package"><h3>Ultra</h3><h4>Bespoke Fleet</h4><ul><li>Everything in Platinum</li><li>AOG Ramp Response</li><li>Custom Scenting</li><li>Brightwork</li></li>Protection Film</li><li>Fleet Membership</li></ul><div class="pricing-block">
+        <div class="package"><h3>Ultra</h3><p style='font-weight:600;color:#D4AF37;'>Custom Pricing</p><h4>Bespoke Fleet</h4><ul><li>Everything in Platinum</li><li>AOG Ramp Response</li><li>Custom Scenting</li><li>Brightwork Film</li><li>Fleet Membership</li></ul><div class="pricing-block">
   <p class="pricing"><strong>Custom Fleet Programs · Call for customized pricing to fit your needs!</strong></p>
 </div>
 </div>
       </div>
     </div>
   </section>
+
+
+  <!-- Package Comparison Grid -->
+  <section id="package-comparison" class="alt">
+    <div class="container">
+      <h2 class="sec-head">Package Pricing Comparison</h2>
+      <div class="gold-line"></div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;text-align:center;">
+          <thead>
+            <tr style="background:#001126;color:#fff;">
+              <th style="padding:12px;border:1px solid #ccc;">Package</th>
+              <th style="padding:12px;border:1px solid #ccc;">Single Engine</th>
+              <th style="padding:12px;border:1px solid #ccc;">Multi Engine</th>
+              <th style="padding:12px;border:1px solid #ccc;">Light Jet</th>
+              <th style="padding:12px;border:1px solid #ccc;">Large Jet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:12px;border:1px solid #ccc;"><strong>Bronze</strong></td>
+              <td style="padding:12px;border:1px solid #ccc;">$250+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$400+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$600+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$1200+</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;border:1px solid #ccc;"><strong>Silver</strong></td>
+              <td style="padding:12px;border:1px solid #ccc;">$550+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$800+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$1200+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$2200+</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;border:1px solid #ccc;"><strong>Gold</strong></td>
+              <td style="padding:12px;border:1px solid #ccc;">$1200+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$1600+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$2800+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$4800+</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;border:1px solid #ccc;"><strong>Platinum</strong></td>
+              <td style="padding:12px;border:1px solid #ccc;">$2400+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$3200+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$6500+</td>
+              <td style="padding:12px;border:1px solid #ccc;">$12,000+</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;border:1px solid #ccc;"><strong>Ultra</strong></td>
+              <td colspan="4" style="padding:12px;border:1px solid #ccc;">Custom Fleet Programs · Call for pricing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Quick Quote Form -->
+<section id="quick-quote">
+  <div class="container">
+    <h2 class="sec-head">Request a Quick Quote</h2>
+    <div class="gold-line"></div>
+    <form action="https://formspree.io/f/xpwyroro" method="POST" style="max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:12px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:10px;border:1px solid #ccc;border-radius:6px;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:10px;border:1px solid #ccc;border-radius:6px;">
+      <input type="text" name="tailnumber" placeholder="Tail Number" style="padding:10px;border:1px solid #ccc;border-radius:6px;">
+      <input type="text" name="airport" placeholder="Airport" style="padding:10px;border:1px solid #ccc;border-radius:6px;">
+      <select name="package" style="padding:10px;border:1px solid #ccc;border-radius:6px;">
+        <option value="">Select Package</option>
+        <option value="Bronze">Bronze</option>
+        <option value="Silver">Silver</option>
+        <option value="Gold">Gold (Most Popular)</option>
+        <option value="Platinum">Platinum</option>
+        <option value="Ultra">Ultra</option>
+      </select>
+      <button type="submit" class="cta">Submit Quote Request</button>
+    </form>
+  </div>
+</section>
+
 
   <!-- Gallery -->
   <section id="gallery" class="gallery">
