@@ -11,10 +11,8 @@
   "description": "Luxury aircraft detailing across DC, Maryland, and Virginia. From GA to corporate jets, helicopters, turboprops, experimental, vintage, warbirds. Services include brightwork polishing, ceramic coatings, interior and exterior detailing, AOG ramp response, fleet programs, and aircraft detailing near me.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Washington DC Metro Area",
     "addressLocality": "Washington",
     "addressRegion": "DC",
-    "postalCode": "20001",
     "addressCountry": "US"
   },
   "geo": {
@@ -164,12 +162,12 @@
   "serviceType": [
     "Aircraft Detailing",
     "Jet Cleaning",
+    "Brightwork",
     "Waxing",
     "Polishing",
-    "Brightwork",
-    "Ceramic Coating",
     "Interior Detailing",
     "Exterior Wash",
+    "Ceramic Coating",
     "Fleet Programs",
     "FAA Compliant Cleaning"
   ],
@@ -181,7 +179,10 @@
     "aircraft interior cleaning",
     "aircraft ceramic coating",
     "aircraft fleet programs",
-    "FAA compliant aircraft cleaning"
+    "FAA compliant aircraft cleaning",
+    "aircraft detailing DC",
+    "aircraft detailing Virginia",
+    "aircraft detailing Maryland"
   ],
   "sameAs": [
     "https://www.instagram.com/planeandsimpledetails",
