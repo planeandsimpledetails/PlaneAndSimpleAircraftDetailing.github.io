@@ -114,7 +114,12 @@
     .package .cta{margin-top:20px;display:inline-block}
 
     /* Gallery */
-    .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
+    .gallery {
+  display:flex;
+  overflow-x:auto;
+  overflow-y:hidden; /* Prevent vertical slider */
+  scroll-snap-type:x mandatory;
+}
     .pane{flex:0 0 100%;height:70vh;scroll-snap-align:center;position:relative}
     .pane img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
     .pane .word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:3rem;color:#fff;letter-spacing:.5rem;background:rgba(0,17,38,.28)}
