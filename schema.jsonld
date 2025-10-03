@@ -2,17 +2,19 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Plane & Simple Aircraft Detailing",
-  "image": "https://planeandsimpledetails.github.io/Logo.png",
-  "@id": "https://planeandsimpledetails.github.io/",
   "url": "https://planeandsimpledetails.github.io/",
+  "logo": "https://planeandsimpledetails.github.io/Logo.png",
+  "image": "https://planeandsimpledetails.github.io/Logo.png",
   "telephone": "+1-202-805-3443",
   "email": "planeandsimpledetails@gmail.com",
   "priceRange": "$$",
-  "description": "Luxury aircraft detailing services in Washington, DC, Maryland, and Virginia. Serving general aviation to corporate jets, including turboprops, helicopters, gliders, and warbirds.",
+  "description": "Plane & Simple provides luxury aircraft detailing across Washington DC, Maryland, and Virginia. We service General Aviation, single engine, multi engine, turboprops, corporate jets, helicopters, experimental, light sport, gliders, vintage aircraft, and warbirds. Services include aircraft detailing, jet cleaning, brightwork polishing, ceramic coatings, interior sterilization, leather care, AOG ramp response, and bespoke fleet programs.",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Service Area Only",
     "addressLocality": "Washington",
     "addressRegion": "DC",
+    "postalCode": "20001",
     "addressCountry": "US"
   },
   "geo": {
@@ -133,32 +135,98 @@
   "makesOffer": [
     {
       "@type": "Service",
-      "name": "General Aviation Aircraft Detailing",
-      "serviceType": "Exterior and interior detailing for Cessna, Piper, Cirrus, Beechcraft, Mooney, Diamond.",
+      "name": "General Aviation Detailing",
+      "serviceType": "Exterior and interior detailing for single engine and multi engine aircraft including Cessna, Piper, Cirrus, Beechcraft, Mooney, Diamond.",
       "areaServed": "Washington DC Metro Area"
     },
     {
       "@type": "Service",
-      "name": "Corporate Jet Detailing",
-      "serviceType": "Luxury detailing for Gulfstream, Bombardier Challenger/Global, Dassault Falcon, Embraer Legacy/Phenom, Cessna Citation, Boeing BBJ, Airbus ACJ.",
+      "name": "Experimental & Light Sport Aircraft Detailing",
+      "serviceType": "Detailing for experimental and LSA aircraft such as Vans RV, Kitfox, Rans, Sling, and similar.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Vintage & Warbird Aircraft Detailing",
+      "serviceType": "Specialized cleaning, brightwork, and preservation for vintage aircraft, classics, and warbirds.",
       "areaServed": "Washington DC Metro Area"
     },
     {
       "@type": "Service",
       "name": "Turboprop Aircraft Detailing",
-      "serviceType": "Detailing for King Air, Pilatus PC-12, TBM, Dornier, Mitsubishi MU-2.",
+      "serviceType": "Detailing for King Air, Pilatus PC-12, TBM, Dornier, Mitsubishi MU-2, and other turboprops.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Corporate Jet Detailing",
+      "serviceType": "Luxury detailing for Gulfstream, Bombardier Challenger/Global, Dassault Falcon, Embraer Legacy/Phenom, Cessna Citation, Boeing Business Jet, Airbus Corporate Jet.",
       "areaServed": "Washington DC Metro Area"
     },
     {
       "@type": "Service",
       "name": "Helicopter & Rotorcraft Detailing",
-      "serviceType": "Exterior and cabin cleaning for Bell, Sikorsky, Airbus Helicopters, Robinson, Leonardo.",
+      "serviceType": "Cabin and exterior cleaning for Bell, Sikorsky, Airbus Helicopters, Robinson, Leonardo.",
       "areaServed": "Washington DC Metro Area"
     },
     {
       "@type": "Service",
-      "name": "Fleet & AOG Response Programs",
-      "serviceType": "Custom fleet maintenance programs, on-demand AOG (Aircraft on Ground) ramp response, corporate fleet memberships.",
+      "name": "Glider & Specialty Aircraft Detailing",
+      "serviceType": "Interior and exterior cleaning for gliders, sailplanes, and unique specialty aircraft.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Fleet & AOG Ramp Programs",
+      "serviceType": "Custom fleet maintenance programs, on-demand AOG (Aircraft on Ground) ramp response, quarterly and annual contracts for operators and flight departments.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Brightwork Polishing",
+      "serviceType": "Specialized brightwork metal polishing for corporate jets and high-visibility components.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Ceramic Coating",
+      "serviceType": "Long-lasting ceramic paint protection for jets, turboprops, and GA aircraft.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Interior Aircraft Detailing",
+      "serviceType": "Cabin cleaning, leather conditioning, carpet shampooing, and lavatory sanitation.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Exterior Aircraft Wash",
+      "serviceType": "Full exterior wash services including dry wash, waterless wash, and wax treatments.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "De-Ice Boot Restoration",
+      "serviceType": "Stripping and resealing of de-ice boots to restore performance and appearance.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Paint Protection Film (PPF)",
+      "serviceType": "Protective film application for leading edges and high-wear areas.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Cabin Disinfection & Ozone Treatment",
+      "serviceType": "Cabin sterilization using ozone treatment and disinfection protocols.",
+      "areaServed": "Washington DC Metro Area"
+    },
+    {
+      "@type": "Service",
+      "name": "Charter & FAA-Compliant Cleaning",
+      "serviceType": "Detailing solutions for Part 135 charter aircraft and FAA-compliant cleaning programs.",
       "areaServed": "Washington DC Metro Area"
     }
   ]
